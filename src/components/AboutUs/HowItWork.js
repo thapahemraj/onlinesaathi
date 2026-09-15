@@ -16,12 +16,12 @@ const HowItWork = () => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="about" />
-              How It's Work
+              How It Works
             </span>
-            <h2>The Data Science Process</h2>
+            <h2>How Online Saathi Works</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              From connecting with a Saathi to accessing essential services —
+              our simple process empowers workers at every step.
             </p>
           </div>
 
@@ -32,10 +32,10 @@ const HowItWork = () => {
                 <div className="image">
                   <img src={process1} alt="about" />
                 </div>
-                <h3>Frame the Problem</h3>
+                <h3>Connect with a Saathi</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  A trained local Saathi agent introduces workers to the
+                  platform and understands their needs and goals.
                 </p>
               </div>
             </div>
@@ -46,10 +46,10 @@ const HowItWork = () => {
                 <div className="image">
                   <img src={process2} alt="about" />
                 </div>
-                <h3>Collect the Raw Data</h3>
+                <h3>Skill Assessment</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  Saathis conduct comprehensive skill assessments to identify
+                  the best job opportunities for each worker.
                 </p>
               </div>
             </div>
@@ -60,10 +60,10 @@ const HowItWork = () => {
                 <div className="image">
                   <img src={process3} alt="about" />
                 </div>
-                <h3>Process the Data</h3>
+                <h3>Access Essential Services</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  Workers can access government schemes, banking, insurance,
+                  travel, and remittance services through the platform.
                 </p>
               </div>
             </div>
@@ -74,10 +74,10 @@ const HowItWork = () => {
                 <div className="image">
                   <img src={process4} alt="about" />
                 </div>
-                <h3>Explore the Data</h3>
+                <h3>Job Matching</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  Advanced matching connects workers with verified employers
+                  and positions that match their skills and aspirations.
                 </p>
               </div>
             </div>
@@ -88,10 +88,10 @@ const HowItWork = () => {
                 <div className="image">
                   <img src={process5} alt="about" />
                 </div>
-                <h3>Perform In-depth Analysis</h3>
+                <h3>Application Support</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  Saathis help with applications, resumes, and interview
+                  preparation to ensure every worker is confident.
                 </p>
               </div>
             </div>
@@ -102,10 +102,10 @@ const HowItWork = () => {
                 <div className="image">
                   <img src={process6} alt="about" />
                 </div>
-                <h3>Communicate Results</h3>
+                <h3>Ongoing Support</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  After placement, workers continue to receive support and
+                  guidance to grow their careers and build better futures.
                 </p>
               </div>
             </div>

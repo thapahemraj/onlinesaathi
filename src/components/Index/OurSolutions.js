@@ -10,12 +10,12 @@ const OurSolutions = () => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="star" />
-              Our Solutions
+              Online Saathi
             </span>
-            <h2>We Different From Others Should Choose Us</h2>
+            <h2>Our community is built to support workers and opportunities</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              We connect workers with meaningful jobs, practical services, and a
+              supportive community that helps them grow with confidence.
             </p>
           </div>
 
@@ -26,15 +26,15 @@ const OurSolutions = () => {
                   <i className="flaticon-rocket"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Code Security</Link>
+                  <Link to="https://dash.onlinesaathi.org/login">12,500+ Individuals Placed</Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et.
+                  Access a growing pipeline of opportunities and career pathways
+                  designed to help workers find meaningful work.
                 </p>
 
-                <Link to="/services/service-details" className="view-details-btn">
-                  View Details
+                <Link to="https://dash.onlinesaathi.org/login" className="view-details-btn">
+                  Apply now
                 </Link>
               </div>
             </div>
@@ -46,16 +46,16 @@ const OurSolutions = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">Team Management</Link>
+                  <Link to="https://dash.onlinesaathi.org/login">50+ Services</Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et.
+                  Discover support-driven services that make daily work and
+                  personal growth easier for the community.
                 </p>
 
-                <Link to="/services/service-details" className="view-details-btn">
-                  View Details
+                <Link to="https://dash.onlinesaathi.org/login" className="view-details-btn">
+                  Explore services
                 </Link>
               </div>
             </div>
@@ -67,16 +67,16 @@ const OurSolutions = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">Access Controlled</Link>
+                  <Link to="https://dash.onlinesaathi.org/login">1500+ Saathis</Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et.
+                  Build connections with our trusted network of Saathi agents
+                  and partners across 25+ states.
                 </p>
 
-                <Link to="/services/service-details" className="view-details-btn">
-                  View Details
+                <Link to="https://dash.onlinesaathi.org/login" className="view-details-btn">
+                  Join the network
                 </Link>
               </div>
             </div>

@@ -33,17 +33,15 @@ const FAQPage = () => {
               <AccordionItem uuid="a">
                 <AccordionItemHeading>
                   <AccordionItemButton>
-                    Q1. What is Data Science? List the differences between
-                    supervised and unsupervised learning.
+                    Q1. How do I become a Saathi partner?
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Visit our contact page or reach us at
+                    support@onlinesaathi.org. Our partnership team will guide
+                    you through onboarding and help you get started as a Saathi
+                    agent in your area.
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
@@ -51,16 +49,15 @@ const FAQPage = () => {
               <AccordionItem uuid="b">
                 <AccordionItemHeading>
                   <AccordionItemButton>
-                    Q2. What is Selection Tracer.com?
+                    Q2. What services can I access through Online Saathi?
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Online Saathi offers job matching, government scheme
+                    assistance, micro ATM services, PAN card applications, bill
+                    payments, travel booking, insurance, and Indo-Nepal
+                    remittance services — all through your local Saathi.
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
@@ -68,16 +65,15 @@ const FAQPage = () => {
               <AccordionItem uuid="c">
                 <AccordionItemHeading>
                   <AccordionItemButton>
-                    Q3. What is tracer-variance trade-off?
+                    Q3. How does the Jobs Connect service work?
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Your local Saathi assesses your skills, matches you with
+                    relevant job opportunities, and supports you through the
+                    application process. All employers and job listings are
+                    verified for your safety.
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
@@ -85,16 +81,15 @@ const FAQPage = () => {
               <AccordionItem uuid="d">
                 <AccordionItemHeading>
                   <AccordionItemButton>
-                    Q4. What is a confusion matrix?
+                    Q4. Is there a fee to use Online Saathi services?
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Most services are free for end users. Some services like PAN
+                    card applications or travel bookings may have standard
+                    processing fees, which are transparently communicated
+                    upfront.
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
@@ -102,17 +97,14 @@ const FAQPage = () => {
               <AccordionItem uuid="e">
                 <AccordionItemHeading>
                   <AccordionItemButton>
-                    Q5. What is the difference between “long” and “wide” format
-                    data?
+                    Q5. How do I get help with government schemes?
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Your local Saathi will identify schemes you may be eligible
+                    for, help you gather the required documents, assist with the
+                    application, and follow up until benefits are delivered.
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>

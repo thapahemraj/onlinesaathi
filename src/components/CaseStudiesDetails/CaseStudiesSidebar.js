@@ -12,15 +12,15 @@ const CaseStudiesSidebar = () => {
               </div>
               
               <span>Client:</span>
-              <a href="https://envytheme.com/" target="_blank" rel="noreferrer">
-                EnvyTheme.com
+              <a href="https://www.onlinesaathi.org/" target="_blank" rel="noreferrer">
+                Online Saathi
               </a>
               <a
-                href="https://themeforest.net/"
+                href="https://dash.onlinesaathi.org/login"
                 target="_blank"
                 rel="noreferrer"
               >
-                ThemeForest.com
+                Saathi Dashboard
               </a>
             </li>
 
@@ -36,8 +36,8 @@ const CaseStudiesSidebar = () => {
               <div className="icon">
                 <i className="bx bx-purchase-tag"></i>
               </div>
-              <span>Technologies:</span>
-              Python, Data Science
+              <span>Services:</span>
+              Jobs Connect, Micro ATM
             </li>
 
             <li>
@@ -45,7 +45,7 @@ const CaseStudiesSidebar = () => {
                 <i className="bx bx-check"></i>
               </div>
               <span>Completed:</span>
-              28 April 2020
+              30 April 2025
             </li>
 
             <li>
@@ -53,8 +53,8 @@ const CaseStudiesSidebar = () => {
                 <i className="bx bx-globe"></i>
               </div>
               <span>Website:</span>
-              <a href="https://envytheme.com/" target="_blank" rel="noreferrer">
-                EnvyTheme.com
+              <a href="https://www.onlinesaathi.org/" target="_blank" rel="noreferrer">
+                www.onlinesaathi.org
               </a>
             </li>
           </ul>

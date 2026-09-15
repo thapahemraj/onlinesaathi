@@ -1,9 +1,9 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
-import team1 from "../../images/team/team1.jpg"
-import team2 from "../../images/team/team2.jpg"
-import team3 from "../../images/team/team4.jpg"
-import team4 from "../../images/team/team4.jpg"
+import team1 from "../../images/scientist/scientist6.png"
+import team2 from "../../images/scientist/scientist3.png"
+import team3 from "../../images/scientist/scientist4.png"
+import team4 from "../../images/scientist/scientist8.png"
 
 const TeamMember = () => {
   return (
@@ -17,8 +17,8 @@ const TeamMember = () => {
             </span>
             <h2>Our Awesome Team</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              Meet the passionate people behind Online Saathi, working
+              every day to empower India's informal workforce.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ const TeamMember = () => {
                   </ul>
                 </div>
                 <div className="content">
-                  <h3>Merv Adrian</h3>
+                  <h3>Naresh Sijapati</h3>
                   <span>CEO & Founder</span>
                 </div>
               </div>
@@ -127,8 +127,8 @@ const TeamMember = () => {
                   </ul>
                 </div>
                 <div className="content">
-                  <h3>Kirk Borne</h3>
-                  <span>UX/UI Designer</span>
+                  <h3>Bhavika Bhogekar</h3>
+                  <span>COO Founder</span>
                 </div>
               </div>
             </div>
@@ -182,8 +182,8 @@ const TeamMember = () => {
                   </ul>
                 </div>
                 <div className="content">
-                  <h3>Carla Gentry</h3>
-                  <span>Web Developer</span>
+                  <h3>Hemraj Thapa</h3>
+                  <span>Chief Operation Officer</span>
                 </div>
               </div>
             </div>
@@ -237,8 +237,8 @@ const TeamMember = () => {
                   </ul>
                 </div>
                 <div className="content">
-                  <h3>Marie Curie</h3>
-                  <span>Support</span>
+                  <h3>Ganesh Bahadur KC</h3>
+                  <span>Account Officer</span>
                 </div>
               </div>
             </div>

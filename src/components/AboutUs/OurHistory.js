@@ -15,15 +15,14 @@ const OurHistory = () => {
               <img src={starIcon} alt="banner" />
               Our History
             </span>
-            <h2>History Begins in 2010</h2>
+            <h2>History Begins in 2015</h2>
           </div>
 
           <ol className="timeline history-timeline">
             <li className="timeline-block">
               <div className="timeline-date">
-                <span>2010</span>
-                February 20
-                <sup>th</sup>
+                <span>2015</span>
+                From Struggle to Purpose
               </div>
 
               <div className="timeline-icon">
@@ -34,12 +33,14 @@ const OurHistory = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-7 col-md-12">
                     <div className="content">
-                      <h3>Founded</h3>
+                      <h3>From Struggle to Purpose</h3>
                       <p>
-                        Real innovations and a positive customer experience are
-                        the heart of successful communication. Lorem ipsum dolor
-                        sit amet, sectetur adipiscing elit, tempor incididunt ut
-                        labore et dolore magna.
+                        Naresh had worked as a child labourer in factories,
+                        hotels, and tea shops — yet never gave up his education.
+                        While at Teach for India, he saw the hardships of migrant
+                        workers first-hand and founded Online Saathi, a digital
+                        mobile office that helped migrants access jobs, their
+                        rights, and legal aid in cities.
                       </p>
                     </div>
                   </div>
@@ -55,9 +56,8 @@ const OurHistory = () => {
 
             <li className="timeline-block">
               <div className="timeline-date">
-                <span>2013</span>
-                January 14
-                <sup>th</sup>
+                <span>2018</span>
+                Labour Resource & Support Centre
               </div>
 
               <div className="timeline-icon">
@@ -68,12 +68,13 @@ const OurHistory = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-7 col-md-12">
                     <div className="content">
-                      <h3>Global Success</h3>
+                      <h3>Labour Resource & Support Centre</h3>
                       <p>
-                        Real innovations and a positive customer experience are
-                        the heart of successful communication. Lorem ipsum dolor
-                        sit amet, sectetur adipiscing elit, tempor incididunt ut
-                        labore et dolore magna.
+                        With CSR funding, Naresh launched the Labour Resource and
+                        Support Centre, helping 20,000+ migrants across the
+                        country. He registered a union and helped lakhs of
+                        migrant workers access government schemes, entitlements,
+                        wages, and legal aid.
                       </p>
                     </div>
                   </div>
@@ -89,9 +90,8 @@ const OurHistory = () => {
 
             <li className="timeline-block">
               <div className="timeline-date">
-                <span>2016</span>
-                March 25
-                <sup>th</sup>
+                <span>2019</span>
+                Relief During the Pandemic
               </div>
 
               <div className="timeline-icon">
@@ -102,12 +102,13 @@ const OurHistory = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-7 col-md-12">
                     <div className="content">
-                      <h3>Founded Data Center</h3>
+                      <h3>Relief During the Pandemic</h3>
                       <p>
-                        Real innovations and a positive customer experience are
-                        the heart of successful communication. Lorem ipsum dolor
-                        sit amet, sectetur adipiscing elit, tempor incididunt ut
-                        labore et dolore magna.
+                        When COVID-19 hit migrant communities hard, Online Saathi
+                        organised relief for over 12,500 migrant labourer
+                        families — food, rations, transport, flight tickets,
+                        livelihoods, and loans to start businesses — raising more
+                        than ₹2.25 crore over two years.
                       </p>
                     </div>
                   </div>
@@ -123,9 +124,8 @@ const OurHistory = () => {
 
             <li className="timeline-block">
               <div className="timeline-date">
-                <span>2020</span>
-                December 10
-                <sup>th</sup>
+                <span>2022</span>
+                #WalkForMigrant
               </div>
 
               <div className="timeline-icon">
@@ -136,12 +136,13 @@ const OurHistory = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-7 col-md-12">
                     <div className="content">
-                      <h3>International Award</h3>
+                      <h3>#WalkForMigrant</h3>
                       <p>
-                        Real innovations and a positive customer experience are
-                        the heart of successful communication. Lorem ipsum dolor
-                        sit amet, sectetur adipiscing elit, tempor incididunt ut
-                        labore et dolore magna.
+                        Naresh walked 5,100 kilometres through 77 districts
+                        across 10 states. He filed 100+ RTIs on migrant labour
+                        issues and petitioned over 50 district collectors and the
+                        PMO, calling for action and dedicated schemes for migrant
+                        workers.
                       </p>
                     </div>
                   </div>

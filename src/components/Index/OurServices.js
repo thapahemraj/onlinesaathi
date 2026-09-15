@@ -23,43 +23,44 @@ const OurServices = () => {
                     <img src={starIcon} alt="icon" /> Services
                   </span>
 
-                  <h2>Cloud Hosting Services</h2>
+                  <h2>Opportunities built around worker success</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Online Saathi creates pathways for workers to discover jobs,
+                    build skills, and access the support they need to grow in a
+                    changing economy.
                   </p>
                   <ul className="about-list mb-0">
                     <li>
                       <i className="flaticon-tick"></i>
-                      Cloud Databases
+                      Job matching and referrals
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      Website Hosting
+                      Skill-building support
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      File Storage
+                      Community-driven opportunities
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      Forex Trading
+                      Trusted service access
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      File Backups
+                      Career growth guidance
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      Remote Desktop
+                      Worker empowerment programs
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      Email Servers
+                      Local network support
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      Hybrid Cloud
+                      Continuous learning opportunities
                     </li>
                   </ul>
                 </div>
@@ -81,44 +82,45 @@ const OurServices = () => {
                     <img src={starIcon} alt="icon" /> Services
                   </span>
 
-                  <h2>Design & Development</h2>
+                  <h2>Support that helps workers thrive</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Our platform brings together workers, supporters, and
+                    businesses to encourage progress, create opportunities, and
+                    strengthen the community at every step.
                   </p>
 
                   <ul className="our-mission-list mb-0">
                     <li>
                       <i className="flaticon-tick"></i>
-                      Responsive Design
+                      Reliable worker support
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      React Development
+                      Better visibility for services
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      Apps Development
+                      Community-driven connections
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      Laravel Development
+                      Growth-oriented partnerships
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      UX/UI Design
+                      Career confidence and guidance
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      E-commerce Design
+                      Access to wider opportunities
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      Web Design
+                      Stronger local collaboration
                     </li>
                     <li>
                       <i className="flaticon-tick"></i>
-                      Print Ready Design
+                      Shared success across the network
                     </li>
                   </ul>
                 </div>

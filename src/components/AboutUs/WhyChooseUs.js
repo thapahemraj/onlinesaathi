@@ -16,32 +16,36 @@ const WhyChooseUs = () => {
                 </span>
                 <h2>Why Choose Us?</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  Online Saathi combines technology with a trusted local network
+                  to make essential services accessible to the informal
+                  workforce.
                 </p>
                 <div className="inner-box">
                   <div className="single-item">
                     <div className="count-box">1</div>
-                    <h3>Data for All Your People</h3>
+                    <h3>Trusted Local Network</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      1,500+ trained Saathi agents across 25+ states deliver
+                      services at the grassroots, building trust one community
+                      at a time.
                     </p>
                   </div>
                   <div className="single-item">
                     <div className="count-box">2</div>
-                    <h3>A New Breed of AI</h3>
+                    <h3>Essential Services Made Easy</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      50+ services from jobs and government schemes to banking,
+                      travel, and remittances — all accessible through a single
+                      trusted platform.
                     </p>
                   </div>
                   <div className="single-item">
                     <div className="count-box">3</div>
-                    <h3>Analytics Business</h3>
+                    <h3>Real Impact, Proven Results</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      12,500+ individuals placed in jobs and 20,000+ migrants
+                      supported since 2018 — with a mission to empower India's
+                      informal workforce.
                     </p>
                   </div>
                 </div>

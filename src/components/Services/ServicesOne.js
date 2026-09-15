@@ -13,12 +13,12 @@ const ServicesOne = () => {
                   <i className="flaticon-rocket"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Startup Applications</Link>
+                  <Link to="/services/service-details">Safe Jobs Connect</Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
+                  Local job opportunities tailored to user skills, with a
+                  job-matching tool, resume builder, and Saathi support for a
+                  smooth hiring experience.
                 </p>
 
                 <Link className="view-details-btn" to="/services/service-details">
@@ -34,13 +34,12 @@ const ServicesOne = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">SaaS Solutions</Link>
+                  <Link to="/services/service-details">Social Welfare Schemes</Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
+                  Identify eligible government schemes, guide applications, and
+                  track status so benefits reach the right people efficiently.
                 </p>
 
                 <Link className="view-details-btn" to="/services/service-details">
@@ -56,13 +55,12 @@ const ServicesOne = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">eCommerce Platforms</Link>
+                  <Link to="/services/service-details">Micro ATM Services</Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
+                  AEPS cash withdrawals, balance enquiries, and mini statements
+                  brought right to your doorstep through local Saathi agents.
                 </p>
 
                 <Link className="view-details-btn" to="/services/service-details">
@@ -78,13 +76,12 @@ const ServicesOne = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">Research</Link>
+                  <Link to="/services/service-details">PAN Card Center</Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
+                  Easy PAN card applications and verifications made simple for
+                  rural and semi-urban communities at local centers.
                 </p>
 
                 <Link className="view-details-btn" to="/services/service-details">
@@ -100,13 +97,12 @@ const ServicesOne = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">Analytics</Link>
+                  <Link to="/services/service-details">Travel & Bill Payments</Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
+                  Ticket booking and travel assistance, plus electricity, mobile,
+                  DTH and more — all paid in one convenient place.
                 </p>
 
                 <Link className="view-details-btn" to="/services/service-details">
@@ -122,13 +118,12 @@ const ServicesOne = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">Technology</Link>
+                  <Link to="/services/service-details">Neo Banking & Remittance</Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
+                  Modern banking features for informal workers and secure
+                  cross-border remittances between India and Nepal.
                 </p>
 
                 <Link className="view-details-btn" to="/services/service-details">

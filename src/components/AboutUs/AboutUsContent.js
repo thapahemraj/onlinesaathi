@@ -27,37 +27,39 @@ const AboutUsContent = () => {
                     <img src={starIcon} alt="banner" />
                     About Us
                   </span>
-                  <h2>Drive Digital Revolution Through Data Science</h2>
+                  <h2>Empowering India's Informal Workforce</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Online Saathi is a digital platform that bridges the gap
+                    between informal workers and essential services — jobs,
+                    government schemes, banking, insurance, and more.
                   </p>
 
                   <ul className="features-list">
                     <li>
                       <img src={icon4} alt="banner" />
-                      <h3>10 Years</h3>
-                      <p>On the market</p>
+                      <h3>1500+</h3>
+                      <p>Saathi agents</p>
                     </li>
                     <li>
                       <img src={icon5} alt="banner" />
-                      <h3>45+</h3>
-                      <p>Team members</p>
+                      <h3>12,500+</h3>
+                      <p>Individuals placed</p>
                     </li>
                     <li>
                       <img src={icon6} alt="banner" />
-                      <h3>100%</h3>
-                      <p>Satisfaction rate</p>
+                      <h3>25+</h3>
+                      <p>State partners</p>
                     </li>
                     <li>
                       <img src={icon7} alt="banner" />
-                      <h3>80%</h3>
-                      <p>Senior scientist</p>
+                      <h3>50+</h3>
+                      <p>Essential services</p>
                     </li>
                   </ul>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    From safe job connect to welfare schemes, micro ATM to
+                    remittances — we make essential services accessible to
+                    everyone, everywhere.
                   </p>
 
                   <Link to="/about-us" className="default-btn">
@@ -80,22 +82,23 @@ const AboutUsContent = () => {
                 <div className="about-text">
                   <h3>Our History</h3>
                   <p>
-                    Real innovations and a positive customer experience are the
-                    heart of successful communication.
+                    Founded by Naresh Sijapati in 2015, Online Saathi began as a
+                    digital mobile office helping migrants access jobs, their
+                    rights, and legal aid in cities.
                   </p>
 
                   <ul className="features-list">
                     <li>
-                      <i className="flaticon-tick"></i> Activate Listening
+                      <i className="flaticon-tick"></i> 20,000+ migrants supported
                     </li>
                     <li>
-                      <i className="flaticon-tick"></i> Brilliant minds
+                      <i className="flaticon-tick"></i> 12,500+ families served in crisis
                     </li>
                     <li>
-                      <i className="flaticon-tick"></i> Better. Best. Wow!
+                      <i className="flaticon-tick"></i> 5,100 km walked for migrant rights
                     </li>
                     <li>
-                      <i className="flaticon-tick"></i> Branding it better!
+                      <i className="flaticon-tick"></i> 100+ RTIs filed
                     </li>
                   </ul>
                 </div>
@@ -105,22 +108,23 @@ const AboutUsContent = () => {
                 <div className="about-text">
                   <h3>Our Mission</h3>
                   <p>
-                    Real innovations and a positive customer experience are the
-                    heart of successful communication.
+                    To create products and services that help informal workers
+                    achieve their goals and build a partner ecosystem that
+                    supports everyone who needs it.
                   </p>
 
                   <ul className="features-list">
                     <li>
-                      <i className="flaticon-tick"></i> Creating. Results.
+                      <i className="flaticon-tick"></i> Bridging the digital divide
                     </li>
                     <li>
-                      <i className="flaticon-tick"></i> Expect more
+                      <i className="flaticon-tick"></i> Job creation at grassroots
                     </li>
                     <li>
-                      <i className="flaticon-tick"></i> Good thinking
+                      <i className="flaticon-tick"></i> Financial inclusion for all
                     </li>
                     <li>
-                      <i className="flaticon-tick"></i> In real we trust
+                      <i className="flaticon-tick"></i> Welfare schemes for workers
                     </li>
                   </ul>
                 </div>
@@ -130,22 +134,23 @@ const AboutUsContent = () => {
                 <div className="about-text">
                   <h3>Who we are</h3>
                   <p>
-                    Real innovations and a positive customer experience are the
-                    heart of successful communication.
+                    Online Saathi is a strong worker community that connects
+                    people with jobs, support, and opportunities to grow
+                    together through a trusted Saathi agent network.
                   </p>
 
                   <ul className="features-list">
                     <li>
-                      <i className="flaticon-tick"></i> Stay real. Always.
+                      <i className="flaticon-tick"></i> Trusted local Saathi agents
                     </li>
                     <li>
-                      <i className="flaticon-tick"></i> We have you covered
+                      <i className="flaticon-tick"></i> Community-first approach
                     </li>
                     <li>
-                      <i className="flaticon-tick"></i> We turn heads
+                      <i className="flaticon-tick"></i> Technology-enabled services
                     </li>
                     <li>
-                      <i className="flaticon-tick"></i> Your brand, promoted
+                      <i className="flaticon-tick"></i> Grassroots empowerment
                     </li>
                   </ul>
                 </div>

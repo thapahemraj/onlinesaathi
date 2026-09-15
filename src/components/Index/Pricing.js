@@ -10,12 +10,12 @@ const Pricing = () => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="priceing" />
-              Pricing
+              Community Impact
             </span>
-            <h2>Pricing Plans</h2>
+            <h2>Our network continues to grow</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              Online Saathi is building a supportive ecosystem where workers,
+              services, and opportunities come together to create lasting impact.
             </p>
           </div>
 
@@ -24,50 +24,33 @@ const Pricing = () => {
               <thead>
                 <tr>
                   <th>
-                    <span className="title">List Of Features</span>
+                    <span className="title">Community Highlights</span>
                   </th>
                   <th>
-                    <span className="price">$15.00</span>
-                    <span className="title">Basic Plan</span>
-                    <span className="desc">/Monthly</span>
+                    <span className="price">12,500+</span>
+                    <span className="title">Individuals Placed</span>
                   </th>
                   <th>
-                    <span className="price">$35.00</span>
-                    <span className="title">Advanced Plan</span>
-                    <span className="desc">/Monthly</span>
+                    <span className="price">50+</span>
+                    <span className="title">Services</span>
                   </th>
                   <th>
-                    <span className="price">$65.00</span>
-                    <span className="title">Expert Plan</span>
-                    <span className="desc">/Monthly</span>
+                    <span className="price">1500+</span>
+                    <span className="title">Saathis</span>
                   </th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr>
-                  <td>Number of features</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
+                  <td>Active network</td>
+                  <td>Strong</td>
+                  <td>Growing</td>
+                  <td>Trusted</td>
                 </tr>
                 <tr>
                   <td>
-                    <Link to="#">5 GB Bandwidth</Link>
-                  </td>
-                  <td className="item-check">
-                    <i className="bx bx-check"></i>
-                  </td>
-                  <td className="item-check">
-                    <i className="bx bx-check"></i>
-                  </td>
-                  <td className="item-check">
-                    <i className="bx bx-check"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <Link to="#">Highest Speed</Link>
+                    <Link to="https://dash.onlinesaathi.org/login">Worker support</Link>
                   </td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
@@ -81,7 +64,7 @@ const Pricing = () => {
                 </tr>
                 <tr>
                   <td>
-                    <Link to="#">1 GB Storage</Link>
+                    <Link to="https://dash.onlinesaathi.org/login">Career pathways</Link>
                   </td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
@@ -95,7 +78,7 @@ const Pricing = () => {
                 </tr>
                 <tr>
                   <td>
-                    <Link to="#">Unlimited Website</Link>
+                    <Link to="https://dash.onlinesaathi.org/login">Service access</Link>
                   </td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
@@ -109,7 +92,7 @@ const Pricing = () => {
                 </tr>
                 <tr>
                   <td>
-                    <Link to="#">Unlimited Users</Link>
+                    <Link to="https://dash.onlinesaathi.org/login">Community growth</Link>
                   </td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
@@ -123,7 +106,7 @@ const Pricing = () => {
                 </tr>
                 <tr>
                   <td>
-                    <Link to="#">24x7 Great Support</Link>
+                    <Link to="https://dash.onlinesaathi.org/login">Growth opportunities</Link>
                   </td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
@@ -137,10 +120,10 @@ const Pricing = () => {
                 </tr>
                 <tr>
                   <td>
-                    <Link to="#">Data Security and Backups</Link>
+                    <Link to="https://dash.onlinesaathi.org/login">Community trust</Link>
                   </td>
-                  <td className="item-none">
-                    <i className="bx bx-x"></i>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
                   </td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
@@ -151,13 +134,27 @@ const Pricing = () => {
                 </tr>
                 <tr>
                   <td>
-                    <Link to="#">Monthly Reports and Analytics</Link>
+                    <Link to="https://dash.onlinesaathi.org/login">Skill and support</Link>
                   </td>
-                  <td className="item-none">
-                    <i className="bx bx-x"></i>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
                   </td>
-                  <td className="item-none">
-                    <i className="bx bx-x"></i>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
+                  </td>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <Link to="https://dash.onlinesaathi.org/login">Long-term impact</Link>
+                  </td>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
+                  </td>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
                   </td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
@@ -166,18 +163,18 @@ const Pricing = () => {
                 <tr>
                   <td></td>
                   <td>
-                    <Link to="#" className="select-btn">
-                      Get it now
+                    <Link to="https://dash.onlinesaathi.org/login" className="select-btn">
+                      Apply now
                     </Link>
                   </td>
                   <td>
-                    <Link to="#" className="select-btn">
-                      Get it now
+                    <Link to="https://dash.onlinesaathi.org/login" className="select-btn">
+                      Join now
                     </Link>
                   </td>
                   <td>
-                    <Link to="#" className="select-btn">
-                      Get it now
+                    <Link to="https://dash.onlinesaathi.org/login" className="select-btn">
+                      Become a Saathi
                     </Link>
                   </td>
                 </tr>

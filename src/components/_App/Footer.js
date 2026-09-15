@@ -16,9 +16,8 @@ const Footer = () => {
                 <img src={logo} alt="logo" />
               </Link>
               <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                suspendisse.
+                Online Saathi is building a strong worker community that connects
+                people with jobs, support, and opportunities to grow together.
               </p>
 
               <ul className="social-link">
@@ -96,7 +95,7 @@ const Footer = () => {
 
               <ul className="footer-links-list">
                 <li>
-                  <Link to="/team">Our Scientists</Link>
+                  <Link to="/team">Our Team</Link>
                 </li>
                 <li>
                   <Link to="/services">Our Services</Link>
@@ -105,10 +104,10 @@ const Footer = () => {
                   <Link to="/testimonials">Testimonials</Link>
                 </li>
                 <li>
-                  <Link to="/services">SaaS Solutions</Link>
+                  <Link to="/case-studies">Case Studies</Link>
                 </li>
                 <li>
-                  <Link to="/case-studies">Case Studies</Link>
+                  <Link to="/our-mission">Our Mission</Link>
                 </li>
               </ul>
             </div>
@@ -130,10 +129,6 @@ const Footer = () => {
                 <li>
                   <i className="bx bx-envelope"></i>
                   <a href="mailto:support@onlinesaathi.org">support@onlinesaathi.org</a>
-                </li>
-                <li>
-                  <i className="bx bxs-inbox"></i>
-                  <a href="tel:+557854578964">+55 785 4578964</a>
                 </li>
               </ul>
             </div>
@@ -159,7 +154,7 @@ const Footer = () => {
             <div className="col-lg-6 col-md-6">
               <ul>
                 <li>
-                  <Link to="/privacy-policy">Refund Policy</Link>
+                  <Link to="/refund-policy">Refund Policy</Link>
                 </li>
                 <li>
                   <Link to="/privacy-policy">Privacy Policy</Link>

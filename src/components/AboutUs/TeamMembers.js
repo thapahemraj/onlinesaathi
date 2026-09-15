@@ -1,9 +1,9 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
-import scientist1 from "../../images/scientist/scientist1.png"
-import scientist2 from "../../images/scientist/scientist2.png"
-import scientist3 from "../../images/scientist/scientist3.png"
-import scientist4 from "../../images/scientist/scientist4.png"
+import scientist1 from "../../images/scientist/scientist6.png"
+import scientist2 from "../../images/scientist/scientist3.png"
+import scientist3 from "../../images/scientist/scientist4.png"
+import scientist4 from "../../images/scientist/scientist8.png"
 
 const TeamMembers = () => {
   return (
@@ -15,10 +15,10 @@ const TeamMembers = () => {
               <img src={starIcon} alt="about" />
               Team Members
             </span>
-            <h2>Our Data Scientist</h2>
+            <h2>Our Leadership Team</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              The passionate people behind Online Saathi, working every day
+              to empower India's informal workforce.
             </p>
           </div>
 
@@ -29,8 +29,8 @@ const TeamMembers = () => {
                   <img src={scientist1} alt="about" />
                 </div>
                 <div className="content">
-                  <h3>Merv Adrian</h3>
-                  <span>Data Management</span>
+                  <h3>Naresh Sijapati</h3>
+                  <span>CEO & Founder</span>
 
                   <ul className="social">
                     <li>
@@ -84,8 +84,8 @@ const TeamMembers = () => {
                   <img src={scientist2} alt="about" />
                 </div>
                 <div className="content">
-                  <h3>Kirk Borne</h3>
-                  <span>Data Scientist</span>
+                  <h3>Bhavika Bhogekar</h3>
+                  <span>COO Founder</span>
 
                   <ul className="social">
                     <li>
@@ -139,8 +139,8 @@ const TeamMembers = () => {
                   <img src={scientist3} alt="about" />
                 </div>
                 <div className="content">
-                  <h3>Carla Gentry</h3>
-                  <span>Analytical Solutions</span>
+                  <h3>Hemraj Thapa</h3>
+                  <span>Chief Operation Officer</span>
 
                   <ul className="social">
                     <li>
@@ -194,8 +194,8 @@ const TeamMembers = () => {
                   <img src={scientist4} alt="about" />
                 </div>
                 <div className="content">
-                  <h3>Marie Curie</h3>
-                  <span>Data Scientist</span>
+                  <h3>Ganesh Bahadur KC</h3>
+                  <span>Account Officer</span>
 
                   <ul className="social">
                     <li>

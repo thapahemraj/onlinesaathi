@@ -4,121 +4,147 @@ import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import PageBanner from "../components/Common/PageBanner"
 import Footer from "../components/_App/Footer"
-// import termsImg from "../images/terms-of-service.jpg"
 
-const RefundPolicy = () => {
+const RefundPolicyPage = () => {
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="Terms of Service"
+        pageTitle="Refund Policy"
         homePageText="Home"
         homePageUrl="/"
-        activePageText="Terms of Service"
+        activePageText="Refund Policy"
       />
 
-      <section className="terms-of-service-area ptb-100">
+      <section className="privacy-policy-area ptb-100">
         <div className="container-fluid">
-          <div className="row justify-content-center">  
+          <div className="row justify-content-center">
             <div className="col-lg-8 col-md-12">
-              <div className="terms-of-service-content">
-                {/* <img src={termsImg} alt="terms" /> */}
+              <div className="privacy-policy-content">
                 <p>
-                  <i>
-                    This Refund was last updated on January 1, 2020.
-                  </i>
+                  <i>This Refund Policy was last updated on January 1, 2025.</i>
                 </p>
-                <h3>1. What Data We Get</h3>
+
+                <h3>1. Overview</h3>
                 <blockquote className="blockquote">
                   <p>
-                    We collect certain data from you directly, like information
-                    you enter yourself, data about your participation in
-                    courses, and data from third-party platforms you connect
-                    with WideCademy. We also collect some data automatically,
-                    like information about your device and what parts of our
-                    Services you interact with or spend time using.
+                    At Online Saathi, we act solely as a third-party technology
+                    platform connecting users with various service providers. We
+                    do not directly provide or control the services delivered by
+                    our partners. This Refund Policy outlines the limited
+                    scenarios where refunds may be applicable and clarifies our
+                    role and responsibility.
                   </p>
                 </blockquote>
-                <h3>2. Data You Provide to Us</h3>
-                <p>
-                  We may collect different data from or about you depending on
-                  how you use the Services. Below are some examples to help you
-                  better understand the data we collect.
-                </p>
-                <h3>3. How We Get Data About You</h3>
-                <p>
-                  We use tools like cookies, web beacons, analytics services,
-                  and advertising providers to gather the data listed above.
-                  Some of these tools offer you the ability to opt out of data
-                  collection.
-                </p>
-                <h3>4. What We Use Your Data For</h3>
-                <ol>
-                  <li>Responding to your questions and concerns;</li>
-                  <li>
-                    Sending you administrative messages and information,
-                    including messages from instructors and teaching assistants,
-                    notifications about changes to our Service, and updates to
-                    our agreements;
-                  </li>
-                  <li>
-                    Sending push notifications to your wireless device to
-                    provide updates and other relevant messages (which you can
-                    manage from the “options” or “settings” page of the mobile
-                    app);
-                  </li>
-                </ol>
-                <h3>5. Your Choices About the Use of Your Data</h3>
-                <p>
-                  You can choose not to provide certain data to us, but you may
-                  not be able to use certain features of the Services.
-                </p>
+
+                <h3>2. General Refund Terms</h3>
+                <h4>2.1 No Refunds for Completed Services</h4>
                 <ul>
                   <li>
-                    To stop receiving promotional communications from us, you
-                    can opt out by using the unsubscribe mechanism in the
-                    promotional communication you receive or by changing the
-                    email preferences in your account. Note that regardless of
-                    your email preference settings, we will send you
-                    transactional and relationship messages regarding the
-                    Services, including administrative confirmations, order
-                    confirmations, important updates about the Services, and
-                    notices about our policies.
+                    Once a user successfully purchases a service, subscription,
+                    or offer through Online Saathi, and the order is processed
+                    with the service provider, no refund will be provided.
                   </li>
                   <li>
-                    The browser or device you use may allow you to control
-                    cookies and other types of local data storage. Your wireless
-                    device may also allow you to control whether location or
-                    other data is collected and shared. You can manage Adobe’s
-                    LSOs through their Website Storage Settings panel.
-                  </li>
-                  <li>
-                    To get information and control cookies used for tailored
-                    advertising from participating companies, see the consumer
-                    opt-out pages for the Network Advertising Initiative and
-                    Digital Advertising Alliance, or if you’re located in the
-                    European Union, visit the Your Online Choices site. To opt
-                    out of Google’s display advertising or customize Google
-                    Display Network ads, visit the Google Ads Settings page. To
-                    opt out of Taboola’s targeted ads, see the Opt-out Link in
-                    their Cookie Policy.
-                  </li>
-                  <li>
-                    To update data you provide directly, log into your account
-                    and update your account at any time.
+                    Users are requested to carefully verify all details before
+                    making a payment.
                   </li>
                 </ul>
-                <h3>6. Our Policy Concerning Children</h3>
+                <h4>2.2 Platform Service Fee</h4>
+                <ul>
+                  <li>
+                    Any platform convenience charges collected by Online Saathi
+                    are non-refundable, even if the transaction is later canceled
+                    by the user or the service provider.
+                  </li>
+                </ul>
+                <h4>2.3 Third-Party Services</h4>
+                <ul>
+                  <li>
+                    Refunds related to the quality, delay, or non-delivery of the
+                    service are subject to the respective service provider's
+                    refund or grievance redressal policy.
+                  </li>
+                  <li>
+                    Online Saathi will facilitate communication between the user
+                    and service provider but is not responsible for any final
+                    outcome of refund claims.
+                  </li>
+                </ul>
+
+                <h3>3. Refunds for Failed Transactions</h3>
+                <h4>3.1 Automatic Refunds for Failed Transactions</h4>
+                <ul>
+                  <li>
+                    If a user's payment is deducted but the transaction fails at
+                    Online Saathi's payment gateway level, the amount will be
+                    automatically refunded to the user's original payment method
+                    within 3 to 21 working days.
+                  </li>
+                  <li>
+                    Refunds will cover only the net transaction amount (excluding
+                    any applicable gateway charges, bank fees, or taxes).
+                  </li>
+                </ul>
+                <h4>3.2 Disputed Transactions</h4>
+                <ul>
+                  <li>
+                    If a transaction appears successful but the user does not
+                    receive service access, the user must raise a support request
+                    by emailing support@onlinesaathi.org within 48 hours of the
+                    transaction.
+                  </li>
+                  <li>
+                    Online Saathi will investigate with the payment gateway
+                    and/or service provider.
+                  </li>
+                  <li>
+                    Based on the investigation, a refund may be facilitated, but
+                    the final decision rests with the service provider.
+                  </li>
+                </ul>
+
+                <h3>4. KYC Verification Failure</h3>
                 <p>
-                  We recognize the privacy interests of children and encourage
-                  parents and guardians to take an active role in their
-                  children’s online activities and interests. Children under 13
-                  (or under 16 in the European Economic Area) should not use the
-                  Services. If we learn that we’ve collected personal data from
-                  a child under those ages, we will take reasonable steps to
-                  delete it.
+                  If a user fails to complete KYC (Know Your Customer)
+                  verification, resulting in account non-activation, the payment
+                  made will not be refunded.
                 </p>
+
+                <h3>5. Important Terms</h3>
+                <ul>
+                  <li>
+                    Role Clarification: Online Saathi is a facilitator platform.
+                    The responsibility for service fulfillment lies with
+                    third-party providers.
+                  </li>
+                  <li>
+                    Maximum Liability: Our liability is strictly limited to
+                    refunding the transaction amount collected by us, if
+                    applicable.
+                  </li>
+                  <li>
+                    No Consequential Damages: Online Saathi is not responsible
+                    for any indirect losses, damages, or inconvenience suffered
+                    by the user.
+                  </li>
+                </ul>
+
+                <h3>6. Changes to This Policy</h3>
+                <p>
+                  We may revise this Refund Policy from time to time. Updates
+                  will be posted on our website and/or communicated via email or
+                  SMS, as appropriate.
+                </p>
+
+                <h3>7. Contact Us</h3>
+                <p>For any refund-related queries, please reach out to:</p>
+                <ul>
+                  <li>Email: support@onlinesaathi.org</li>
+                  <li>Phone: +91-9099005251</li>
+                  <li>Website: www.onlinesaathi.org</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -130,11 +156,6 @@ const RefundPolicy = () => {
   )
 }
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Terms Of Service" />
+export const Head = () => <Seo title="Refund Policy" />
 
-export default RefundPolicy
+export default RefundPolicyPage

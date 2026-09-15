@@ -17,15 +17,16 @@ const ProjectStartArea = () => {
 
             <div className="col-lg-6 col-md-12">
               <div className="project-start-content">
-                <h2>We Like to Start Your Project With Us</h2>
+                <h2>Become a Saathi and earn up to 20k</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  Join the Online Saathi community and start building meaningful
+                  opportunities while being part of a growing network of workers,
+                  partners, and supporters.
                 </p>
 
-                <Link to="/contact" className="default-btn">
+                <Link to="https://dash.onlinesaathi.org/login" className="default-btn">
                   <i className="flaticon-web"></i>
-                  Get Started
+                  Apply now
                   <span></span>
                 </Link>
               </div>

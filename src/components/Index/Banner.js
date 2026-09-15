@@ -20,7 +20,7 @@ const Banner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="100"
                 >
-                  Secure IT Solutions Services
+                  Fostering a Thriving Worker Community
                 </h1>
 
                 <p
@@ -28,8 +28,9 @@ const Banner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="200"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  The platform has fostered a thriving community of workers and
+                  supporters, creating a network where individuals can grow, share
+                  experiences, and continuously improve their career prospects.
                 </p>
 
                 <div
@@ -38,9 +39,9 @@ const Banner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="300"
                 >
-                  <Link to="/contact" className="default-btn">
+                  <Link to="https://dash.onlinesaathi.org/login" className="default-btn">
                     <i className="flaticon-right"></i>
-                    Get Started <span></span>
+                    Become a Saathi <span></span>
                   </Link>
                 </div>
               </div>

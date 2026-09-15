@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Rewy - Gatsby React IT Startup & Technology Template`,
-    description: `Gatsby React IT Startup & Technology Template`,
-    author: `@envytheme`,
-    siteUrl: `https://Rewy-gatsby.envytheme.com`,
+    title: `Online Saathi`,
+    description: `Online Saathi connects migrant workers and communities with jobs, government schemes, and essential services through a trusted network of local Saathi agents across India.`,
+    author: `@onlinesaathi`,
+    siteUrl: `https://www.onlinesaathi.org`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -29,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Online Saathi`,
+        short_name: `Online Saathi`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website

@@ -30,10 +30,10 @@ const BlogSidebar = () => {
               <span className="fullimage cover bg1" role="img"></span>
             </Link>
             <div className="info">
-              <span>June 10, 2020</span>
+              <span>April 30, 2025</span>
               <h4 className="title usmall">
                 <Link to="/blog/blog-details">
-                  The Data Surrounding Higher Education
+                  How Migrant Workers Find Jobs Through Online Saathi
                 </Link>
               </h4>
             </div>
@@ -46,10 +46,10 @@ const BlogSidebar = () => {
               <span className="fullimage cover bg2" role="img"></span>
             </Link>
             <div className="info">
-              <span>June 21, 2020</span>
+              <span>April 29, 2025</span>
               <h4 className="title usmall">
                 <Link to="/blog/blog-details">
-                  Conversion Rate the Sales Funnel Optimization
+                  Accessing Government Schemes Made Simple
                 </Link>
               </h4>
             </div>
@@ -62,10 +62,10 @@ const BlogSidebar = () => {
               <span className="fullimage cover bg3" role="img"></span>
             </Link>
             <div className="info">
-              <span>June 30, 2020</span>
+              <span>April 28, 2025</span>
               <h4 className="title usmall">
                 <Link to="/blog/blog-details">
-                  Business Data is changing the world’s Energy
+                  Empowering Communities Through Sewa Saathi Network
                 </Link>
               </h4>
             </div>
@@ -80,27 +80,27 @@ const BlogSidebar = () => {
           <ul>
             <li>
               <Link to="/blog">
-                Design <span className="post-count">(03)</span>
+                Jobs <span className="post-count">(03)</span>
               </Link>
             </li>
             <li>
               <Link to="/blog">
-                Lifestyle <span className="post-count">(05)</span>
+                Government Schemes <span className="post-count">(05)</span>
               </Link>
             </li>
             <li>
               <Link to="/blog">
-                Script <span className="post-count">(10)</span>
+                Remittance <span className="post-count">(10)</span>
               </Link>
             </li>
             <li>
               <Link to="/blog">
-                Device <span className="post-count">(08)</span>
+                Services <span className="post-count">(08)</span>
               </Link>
             </li>
             <li>
               <Link to="/blog">
-                Tips <span className="post-count">(01)</span>
+                Community <span className="post-count">(01)</span>
               </Link>
             </li>
           </ul>
@@ -111,28 +111,28 @@ const BlogSidebar = () => {
 
           <div className="tagcloud">
             <Link to="/blog">
-              Business <span className="tag-link-count">(3)</span>
+              Jobs <span className="tag-link-count">(3)</span>
             </Link>
             <Link to="/blog">
-              Design <span className="tag-link-count">(3)</span>
+              Migrants <span className="tag-link-count">(3)</span>
             </Link>
             <Link to="/blog">
-              Braike <span className="tag-link-count">(2)</span>
+              Schemes <span className="tag-link-count">(2)</span>
             </Link>
             <Link to="/blog">
-              Fashion <span className="tag-link-count">(2)</span>
+              Remittance <span className="tag-link-count">(2)</span>
             </Link>
             <Link to="/blog">
-              Travel <span className="tag-link-count">(1)</span>
+              Saathi <span className="tag-link-count">(1)</span>
             </Link>
             <Link to="/blog">
-              Smart <span className="tag-link-count">(1)</span>
+              Services <span className="tag-link-count">(1)</span>
             </Link>
             <Link to="/blog">
-              Marketing <span className="tag-link-count">(1)</span>
+              Community <span className="tag-link-count">(1)</span>
             </Link>
             <Link to="/blog">
-              Tips <span className="tag-link-count">(2)</span>
+              Support <span className="tag-link-count">(2)</span>
             </Link>
           </div>
         </div>

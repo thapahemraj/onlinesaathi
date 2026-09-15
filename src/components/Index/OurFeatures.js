@@ -15,13 +15,13 @@ const OurFeatures = () => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="feature" />
-              Our Features
+              Why Choose Us
             </span>
 
-            <h2>We’re Here To Help</h2>
+            <h2>We help workers move forward with confidence</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              Online Saathi brings together opportunity, trust, and practical
+              support so workers can grow, connect, and succeed.
             </p>
           </div>
 
@@ -31,10 +31,10 @@ const OurFeatures = () => {
                 <div className="icon">
                   <img src={serviceIcon1} alt="feature" />
                 </div>
-                <h3>Incredible Infrastructure</h3>
+                <h3>Trusted Opportunities</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore.
+                  Workers can access real opportunities and a platform designed to
+                  create better career visibility and support.
                 </p>
               </div>
             </div>
@@ -44,10 +44,10 @@ const OurFeatures = () => {
                 <div className="icon">
                   <img src={serviceIcon2} alt="feature" />
                 </div>
-                <h3>Email Notifications</h3>
+                <h3>Supportive Network</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore.
+                  A strong eco-system of workers, supporters, and partners creates
+                  a community that is active, helpful, and collaborative.
                 </p>
               </div>
             </div>
@@ -57,10 +57,10 @@ const OurFeatures = () => {
                 <div className="icon">
                   <img src={serviceIcon3} alt="feature" />
                 </div>
-                <h3>Simple Dashboard</h3>
+                <h3>Practical Growth</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore.
+                  We help communities access jobs, services, and progress-driven
+                  connections that improve daily life and work outcomes.
                 </p>
               </div>
             </div>
@@ -70,10 +70,10 @@ const OurFeatures = () => {
                 <div className="icon">
                   <img src={serviceIcon4} alt="feature" />
                 </div>
-                <h3>Information Retrieval</h3>
+                <h3>Career Visibility</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore.
+                  Our platform makes opportunities easier to discover and helps
+                  workers move toward better, more stable options.
                 </p>
               </div>
             </div>
@@ -83,10 +83,10 @@ const OurFeatures = () => {
                 <div className="icon">
                   <img src={serviceIcon5} alt="feature" />
                 </div>
-                <h3>Drag and Drop</h3>
+                <h3>Service Access</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore.
+                  Members can connect with services that reduce barriers and make
+                  support more accessible for everyday needs.
                 </p>
               </div>
             </div>
@@ -96,10 +96,10 @@ const OurFeatures = () => {
                 <div className="icon">
                   <img src={serviceIcon6} alt="feature" />
                 </div>
-                <h3>Deadline Reminders</h3>
+                <h3>Long-term Progress</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore.
+                  Online Saathi is built to help people grow continuously and
+                  stay connected to the opportunities they need most.
                 </p>
               </div>
             </div>

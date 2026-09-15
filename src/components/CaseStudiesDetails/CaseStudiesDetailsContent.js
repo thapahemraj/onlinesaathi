@@ -14,16 +14,14 @@ const CaseStudiesDetailsContent = () => {
                 <img src={details1} alt="about" />
               </div>
               <div className="case-studies-details-desc">
-                <span className="sub-title">Data Science</span>
-                <h3>
-                  Complete Data Science Training: Mathematics, Statistics,
-                  Python, Advanced Statistics in Python
-                </h3>
+                <span className="sub-title">Jobs Connect</span>
+                <h3>Helping 12,500+ Workers Find Reliable Employment</h3>
                 <p>
-                  Improve Machine Learning algorithms by studying underfitting,
-                  overfitting, training, validation, n-fold cross validation,
-                  testing, and how hyperparameters could improve performance.
-                  Perform linear and logistic regressions in Python.
+                  Jobs Connect matches migrant workers with verified employment
+                  opportunities across India. Through our network of 1,500+
+                  Saathi agents, workers receive skill assessment, guidance
+                  through applications, and ongoing support to build stable,
+                  meaningful careers.
                 </p>
                 <div className="row align-items-center">
                   <div className="col-lg-6 col-md-6">
@@ -36,39 +34,35 @@ const CaseStudiesDetailsContent = () => {
                     <div className="content">
                       <h3>Important Facts</h3>
                       <ul>
-                        <li>The Field of Data Science</li>
-                        <li>The Problem</li>
-                        <li>The Solution</li>
-                        <li>The Skills</li>
-                        <li>Statistics</li>
-                        <li>Mathematics</li>
+                        <li>12,500+ Individuals placed</li>
+                        <li>1,500+ Saathi agents nationwide</li>
+                        <li>Verified employers only</li>
+                        <li>Skill assessment and matching</li>
+                        <li>Application support at every step</li>
+                        <li>Ongoing support after placement</li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using ‘Content
-                  here, content here’, making it look like readable English.
-                  Latin words, combined with a handful of model sentence
-                  structures, to generate Lorem Ipsum which looks reasonable.
+                  Migrant workers often struggle to find trustworthy employment
+                  and understand complex application processes. Online Saathi
+                  brings the solution directly to local communities, where
+                  Saathi agents assess each worker's skills and match them with
+                  opportunities that fit their goals.
                 </p>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don’t look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn’t anything
-                  embarrassing hidden in the middle of text.
+                  From verification of employers to preparation for interviews,
+                  workers receive complete support. This local-first approach
+                  builds trust and ensures workers are placed with confidence,
+                  helping families across India secure a sustainable future.
                 </p>
                 <h3>Results</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-                  eiusmod tempor incididunt ut labore et dolore magna ad aliqua.
-                  Ut enim ad minim veniam quis nostrud exercitation ullamco
-                  labori.
+                  More than 12,500 individuals have been placed in reliable jobs
+                  through the Jobs Connect service, with families reporting
+                  greater financial stability and access to essential services
+                  through Online Saathi's wider ecosystem.
                 </p>
               </div>
             </div>

@@ -13,10 +13,10 @@ const CaseStudiesPage = () => {
       <Navbar />
 
       <PageBanner
-        pageTitle="Case Studies 2 Columns"
+        pageTitle="Case Studies"
         homePageText="Home"
         homePageUrl="/"
-        activePageText="Case Studies 2 Columns"
+        activePageText="Case Studies"
       />
 
       <TwoColumns />

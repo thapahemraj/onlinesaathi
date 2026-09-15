@@ -36,16 +36,16 @@ const BlogCard = () => {
                           className="rounded-circle"
                           alt="Blog post"
                         />
-                        <span>Alex Morgan</span>
+                        <span>Online Saathi</span>
                       </div>
                     </li>
                     <li>
-                      <i className="flaticon-calendar"></i> April 5, 2020
+                      <i className="flaticon-calendar"></i> April 30, 2025
                     </li>
                   </ul>
                   <h3>
                     <Link to="/blog/blog-details">
-                      The Data Surrounding Higher Education
+                      How Migrant Workers Find Jobs Through Online Saathi
                     </Link>
                   </h3>
                 </div>
@@ -69,16 +69,16 @@ const BlogCard = () => {
                           className="rounded-circle"
                           alt="Blog post"
                         />
-                        <span>Sarah Taylor</span>
+                        <span>Online Saathi</span>
                       </div>
                     </li>
                     <li>
-                      <i className="flaticon-calendar"></i> April 6, 2020
+                      <i className="flaticon-calendar"></i> April 28, 2025
                     </li>
                   </ul>
                   <h3>
                     <Link to="/blog/blog-details">
-                      Conversion Rate the Sales Funnel Optimization
+                      Accessing Government Schemes Made Simple
                     </Link>
                   </h3>
                 </div>
@@ -102,16 +102,16 @@ const BlogCard = () => {
                           className="rounded-circle"
                           alt="Blog post"
                         />
-                        <span>David Warner</span>
+                        <span>Online Saathi</span>
                       </div>
                     </li>
                     <li>
-                      <i className="flaticon-calendar"></i> April7, 2020
+                      <i className="flaticon-calendar"></i> April 29, 2025
                     </li>
                   </ul>
                   <h3>
                     <Link to="/blog/blog-details">
-                      Business Data is changing the world’s Energy
+                      Empowering Communities Through Sewa Saathi Network
                     </Link>
                   </h3>
                 </div>
@@ -135,16 +135,16 @@ const BlogCard = () => {
                           className="rounded-circle"
                           alt="Blog post"
                         />
-                        <span>David Warner</span>
+                        <span>Online Saathi</span>
                       </div>
                     </li>
                     <li>
-                      <i className="flaticon-calendar"></i> April 8, 2020
+                      <i className="flaticon-calendar"></i> April 27, 2025
                     </li>
                   </ul>
                   <h3>
                     <Link to="/blog/blog-details">
-                      The data-driven approach to understanding
+                      Indo-Nepal Remittance Made Fast and Secure
                     </Link>
                   </h3>
                 </div>
@@ -168,16 +168,16 @@ const BlogCard = () => {
                           className="rounded-circle"
                           alt="Blog post"
                         />
-                        <span>David Warner</span>
+                        <span>Online Saathi</span>
                       </div>
                     </li>
                     <li>
-                      <i className="flaticon-calendar"></i> April 9, 2020
+                      <i className="flaticon-calendar"></i> April 26, 2025
                     </li>
                   </ul>
                   <h3>
                     <Link to="/blog/blog-details">
-                      Finding the blocks of neighboring fields
+                      Why Micro ATM Services Matter for Rural India
                     </Link>
                   </h3>
                 </div>
@@ -201,16 +201,16 @@ const BlogCard = () => {
                           className="rounded-circle"
                           alt="Blog post"
                         />
-                        <span>David Warner</span>
+                        <span>Online Saathi</span>
                       </div>
                     </li>
                     <li>
-                      <i className="flaticon-calendar"></i> April 10, 2020
+                      <i className="flaticon-calendar"></i> April 25, 2025
                     </li>
                   </ul>
                   <h3>
                     <Link to="/blog/blog-details">
-                      Data into Your Enterprise to Drive Insights
+                      One-stop Bill Payments for Everyday Life
                     </Link>
                   </h3>
                 </div>

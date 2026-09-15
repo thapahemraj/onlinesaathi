@@ -20,8 +20,8 @@ const OurBlog = () => {
             </span>
             <h2>Latest Valuable Insights</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              Stories, updates, and insights about empowering India's informal
+              workforce.
             </p>
           </div>
 
@@ -43,16 +43,16 @@ const OurBlog = () => {
                           className="rounded-circle"
                           alt="blog"
                         />
-                        <span>Alex Morgan</span>
+                        <span>Online Saathi</span>
                       </div>
                     </li>
                     <li>
-                      <i className="flaticon-calendar"></i> April 30, 2020
+                      <i className="flaticon-calendar"></i> April 30, 2025
                     </li>
                   </ul>
                   <h3>
                     <Link to="/blog/blog-details">
-                      Six Ways to Make Smarter Decisions
+                      How Migrant Workers Find Jobs Through Online Saathi
                     </Link>
                   </h3>
                 </div>
@@ -76,16 +76,16 @@ const OurBlog = () => {
                           className="rounded-circle"
                           alt="blog"
                         />
-                        <span>Sarah Taylor</span>
+                        <span>Online Saathi</span>
                       </div>
                     </li>
                     <li>
-                      <i className="flaticon-calendar"></i> April 28, 2020
+                      <i className="flaticon-calendar"></i> April 28, 2025
                     </li>
                   </ul>
                   <h3>
                     <Link to="/blog/blog-details">
-                      The Challenges to Tackle Before You Start With AI
+                      Accessing Government Schemes Made Simple
                     </Link>
                   </h3>
                 </div>
@@ -109,16 +109,16 @@ const OurBlog = () => {
                           className="rounded-circle"
                           alt="blog"
                         />
-                        <span>David Warner</span>
+                        <span>Online Saathi</span>
                       </div>
                     </li>
                     <li>
-                      <i className="flaticon-calendar"></i> April 29, 2020
+                      <i className="flaticon-calendar"></i> April 29, 2025
                     </li>
                   </ul>
                   <h3>
                     <Link to="/blog/blog-details">
-                      Why Organisations Want an Analytics Platform
+                      Empowering Communities Through Sewa Saathi Network
                     </Link>
                   </h3>
                 </div>

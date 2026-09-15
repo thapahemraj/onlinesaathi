@@ -4,12 +4,10 @@ import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import PageBanner from "../components/Common/PageBanner"
 import Footer from "../components/_App/Footer"
-// import privacyPolicy from "../images/privacy-policy.jpg"
 
 const PrivacyPolicyPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -25,100 +23,149 @@ const PrivacyPolicyPage = () => {
             <div className="col-lg-8 col-md-12">
               <div className="privacy-policy-content">
                 <p>
-                  <i>
-                    This Privacy Policy was last updated on January 1, 2020.
-                  </i>
+                  <i>This Privacy Policy was last updated on January 1, 2025.</i>
                 </p>
-                <h3>1. What Data We Get</h3>
+                <h3>1. Commitment to Privacy</h3>
                 <blockquote className="blockquote">
                   <p>
-                    We collect certain data from you directly, like information
-                    you enter yourself, data about your participation in
-                    courses, and data from third-party platforms you connect
-                    with WideCademy. We also collect some data automatically,
-                    like information about your device and what parts of our
-                    Services you interact with or spend time using.
+                    At Online Saathi, operated by SHUBHLAXMI MULTI SERVICES INDIA
+                    PRIVATE LIMITED, we are committed to safeguarding your
+                    privacy. Your trust is at the heart of our services. We
+                    strictly follow applicable Indian laws, regulations, and
+                    guidelines to protect your personal information.
                   </p>
                 </blockquote>
-                <h3>2. Data You Provide to Us</h3>
+
+                <h3>2. Information We Collect</h3>
                 <p>
-                  We may collect different data from or about you depending on
-                  how you use the Services. Below are some examples to help you
-                  better understand the data we collect.
+                  We collect necessary personal and business information to
+                  provide a secure, seamless experience:
                 </p>
-                <h3>3. How We Get Data About You</h3>
-                <p>
-                  We use tools like cookies, web beacons, analytics services,
-                  and advertising providers to gather the data listed above.
-                  Some of these tools offer you the ability to opt out of data
-                  collection.
-                </p>
-                <h3>4. What We Use Your Data For</h3>
-                <ol>
-                  <li>Responding to your questions and concerns;</li>
+                <h4>2.1 User Information</h4>
+                <ul>
+                  <li>Full Name</li>
+                  <li>Mobile Number</li>
+                  <li>Email Address</li>
+                  <li>Date of Birth</li>
+                  <li>Gender</li>
+                  <li>Profile Photo</li>
+                </ul>
+                <h4>2.2 Member Information</h4>
+                <ul>
+                  <li>Current and Permanent Address</li>
                   <li>
-                    Sending you administrative messages and information,
-                    including messages from instructors and teaching assistants,
-                    notifications about changes to our Service, and updates to
-                    our agreements;
+                    Identity Proof (Aadhar Card, PAN Card, Passport, Citizenship,
+                    Driver's License)
+                  </li>
+                  <li>Occupation and Education Details</li>
+                  <li>Marital Status and Location</li>
+                </ul>
+                <h4>2.3 Business Information (For Saathi, Partners, Companies)</h4>
+                <ul>
+                  <li>Business Name (only registered names)</li>
+                  <li>Business Registration Certificates</li>
+                  <li>Director Personal Details</li>
+                  <li>Type of Business</li>
+                  <li>Registered Address</li>
+                  <li>Secondary Contact Information</li>
+                  <li>Bank Details (optional)</li>
+                  <li>
+                    Business Documents (PAN, MOA, AOA, licenses, if applicable)
+                  </li>
+                </ul>
+                <h4>2.4 Job Applicant Information</h4>
+                <ul>
+                  <li>Resume and Cover Letter</li>
+                  <li>Educational and Professional Qualifications</li>
+                  <li>References</li>
+                </ul>
+                <h4>2.5 App Permissions</h4>
+                <ul>
+                  <li>Camera and Photos: For KYC and profile verification</li>
+                  <li>SMS Access: To send and receive transaction confirmations</li>
+                  <li>
+                    Contacts Access: To simplify number selection (no storage or
+                    sharing)
+                  </li>
+                  <li>Location Access: To locate nearby agents and services</li>
+                  <li>Internet Access: For a seamless transaction experience</li>
+                </ul>
+
+                <h3>3. How We Use Your Information</h3>
+                <p>We use the collected data to:</p>
+                <ul>
+                  <li>Verify your identity</li>
+                  <li>Facilitate services and transactions</li>
+                  <li>Communicate service updates and promotions</li>
+                  <li>Provide customer support</li>
+                  <li>Improve our platform and services</li>
+                  <li>Detect fraud and unauthorized activities</li>
+                  <li>Ensure compliance with Indian regulatory authorities</li>
+                </ul>
+
+                <h3>4. Sharing and Disclosure</h3>
+                <p>
+                  Your information remains confidential and is not shared without
+                  your consent, except:
+                </p>
+                <ul>
+                  <li>When required by law (government, legal authorities)</li>
+                  <li>For fraud prevention and security measures</li>
+                  <li>
+                    When collaborating with trusted partners (under strict data
+                    protection agreements)
+                  </li>
+                </ul>
+
+                <h3>5. Data Retention & Account Deletion</h3>
+                <p>We manage your data as follows:</p>
+                <ul>
+                  <li>
+                    Retention: We keep your information only as long as needed
+                    for operational, legal, and regulatory purposes.
                   </li>
                   <li>
-                    Sending push notifications to your wireless device to
-                    provide updates and other relevant messages (which you can
-                    manage from the “options” or “settings” page of the mobile
-                    app);
+                    Deletion: Inactive accounts (6 months to 3 years) may be
+                    deleted if: the account balance is zero, no pending
+                    transactions exist, or fraudulent/misuse activities are
+                    detected.
                   </li>
-                </ol>
-                <h3>5. Your Choices About the Use of Your Data</h3>
+                  <li>
+                    For job applicants, data may be retained for evaluation even
+                    after recruitment closure.
+                  </li>
+                </ul>
+
+                <h3>6. Data Protection</h3>
                 <p>
-                  You can choose not to provide certain data to us, but you may
-                  not be able to use certain features of the Services.
+                  We employ industry-standard security practices, including
+                  encryption, secure servers, and regular audits, to protect
+                  your data.
+                </p>
+
+                <h3>7. Changes to This Policy</h3>
+                <p>
+                  We may update this Privacy Policy to reflect changes in our
+                  practices or legal obligations. Significant changes will be
+                  communicated via SMS, email, or in-app notifications. The
+                  latest version will be posted on our website.
+                </p>
+
+                <h3>8. Contact Information</h3>
+                <p>
+                  If you have any queries, concerns, or feedback regarding this
+                  privacy policy, or if you wish to exercise your rights under
+                  applicable law:
                 </p>
                 <ul>
                   <li>
-                    To stop receiving promotional communications from us, you
-                    can opt out by using the unsubscribe mechanism in the
-                    promotional communication you receive or by changing the
-                    email preferences in your account. Note that regardless of
-                    your email preference settings, we will send you
-                    transactional and relationship messages regarding the
-                    Services, including administrative confirmations, order
-                    confirmations, important updates about the Services, and
-                    notices about our policies.
+                    Registered Office: 109, Maruti Heights, Naroda Ring Road,
+                    Near Muthiya Toll Plaza, Ahmedabad, Gujarat 382345, India
                   </li>
-                  <li>
-                    The browser or device you use may allow you to control
-                    cookies and other types of local data storage. Your wireless
-                    device may also allow you to control whether location or
-                    other data is collected and shared. You can manage Adobe’s
-                    LSOs through their Website Storage Settings panel.
-                  </li>
-                  <li>
-                    To get information and control cookies used for tailored
-                    advertising from participating companies, see the consumer
-                    opt-out pages for the Network Advertising Initiative and
-                    Digital Advertising Alliance, or if you’re located in the
-                    European Union, visit the Your Online Choices site. To opt
-                    out of Google’s display advertising or customize Google
-                    Display Network ads, visit the Google Ads Settings page. To
-                    opt out of Taboola’s targeted ads, see the Opt-out Link in
-                    their Cookie Policy.
-                  </li>
-                  <li>
-                    To update data you provide directly, log into your account
-                    and update your account at any time.
-                  </li>
+                  <li>Email: support@onlinesaathi.org</li>
+                  <li>Website: www.onlinesaathi.org</li>
+                  <li>Phone: +91 84888 56251</li>
                 </ul>
-                <h3>6. Our Policy Concerning Children</h3>
-                <p>
-                  We recognize the privacy interests of children and encourage
-                  parents and guardians to take an active role in their
-                  children’s online activities and interests. Children under 13
-                  (or under 16 in the European Economic Area) should not use the
-                  Services. If we learn that we’ve collected personal data from
-                  a child under those ages, we will take reasonable steps to
-                  delete it.
-                </p>
               </div>
             </div>
           </div>
@@ -126,16 +173,10 @@ const PrivacyPolicyPage = () => {
       </section>
 
       <Footer />
-      
     </Layout>
   )
 }
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <Seo title="Privacy Policy" />
 
 export default PrivacyPolicyPage

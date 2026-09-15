@@ -25,9 +25,9 @@ const TwoColumns = () => {
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Movie Recommendation</Link>
+                    <Link to="/case-studies/case-studies-details">Jobs Connect</Link>
                   </h3>
-                  <span>System Project</span>
+                  <span>12,500+ Individuals Placed</span>
                 </div>
               </div>
             </div>
@@ -45,10 +45,10 @@ const TwoColumns = () => {
                 <div className="content">
                   <h3>
                     <Link to="/case-studies/case-studies-details">
-                      Customer Segmentation
+                      Micro ATM Services
                     </Link>
                   </h3>
-                  <span>Machine Learning</span>
+                  <span>AEPS & Banking Access</span>
                 </div>
               </div>
             </div>
@@ -65,9 +65,9 @@ const TwoColumns = () => {
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Data Analysis</Link>
+                    <Link to="/case-studies/case-studies-details">Government Schemes</Link>
                   </h3>
-                  <span>Web Project</span>
+                  <span>500+ Schemes Accessible</span>
                 </div>
               </div>
             </div>
@@ -84,9 +84,9 @@ const TwoColumns = () => {
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Detection Project</Link>
+                    <Link to="/case-studies/case-studies-details">Indo-Nepal Remittance</Link>
                   </h3>
-                  <span>Programming</span>
+                  <span>Fast & Secure Transfers</span>
                 </div>
               </div>
             </div>
@@ -103,9 +103,9 @@ const TwoColumns = () => {
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Data Scientist</Link>
+                    <Link to="/case-studies/case-studies-details">Bill Payment</Link>
                   </h3>
-                  <span>Data Science</span>
+                  <span>One-stop Payments</span>
                 </div>
               </div>
             </div>
@@ -122,9 +122,9 @@ const TwoColumns = () => {
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Benefits Research</Link>
+                    <Link to="/case-studies/case-studies-details">Sewa Saathi Network</Link>
                   </h3>
-                  <span>Science Projects</span>
+                  <span>1500+ Agents Nationwide</span>
                 </div>
               </div>
             </div>

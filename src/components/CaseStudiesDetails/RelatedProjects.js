@@ -20,11 +20,11 @@ const RelatedProjects = () => {
                   <img src={icon1} alt="about" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Data Analytics</Link>
+                  <Link to="/services/service-details">Safe Jobs Connect</Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  Verified job listings with local Saathi support from skill
+                  assessment to application and beyond.
                 </p>
 
                 <Link to="/services/service-details" className="read-more-btn">
@@ -39,11 +39,11 @@ const RelatedProjects = () => {
                   <img src={icon2} alt="about" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">AI & ML Development</Link>
+                  <Link to="/services/service-details">Micro ATM Services</Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  Banking access closer to home with AEPS services and assisted
+                  transactions through your local Saathi.
                 </p>
 
                 <Link to="/services/service-details" className="read-more-btn">
@@ -58,11 +58,11 @@ const RelatedProjects = () => {
                   <img src={icon3} alt="about" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Data Science</Link>
+                  <Link to="/services/service-details">Government Schemes</Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  Guidance and application support for social welfare schemes,
+                  making essential benefits accessible to all.
                 </p>
 
                 <Link to="/services/service-details" className="read-more-btn">

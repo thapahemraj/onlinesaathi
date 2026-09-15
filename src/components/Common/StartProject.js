@@ -18,10 +18,11 @@ const StartProject = () => {
 
             <div className="col-lg-6 col-md-12">
               <div className="project-start-content">
-                <h2>We Like to Start Your Project With Us</h2>
+                <h2>Ready to Start Your Journey With Online Saathi</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  Join our growing network of Saathi partners and users and
+                  access jobs, government schemes, and essential services built
+                  to support our communities.
                 </p>
 
                 <Link to="/contact" className="default-btn">

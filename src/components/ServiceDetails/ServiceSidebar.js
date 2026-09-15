@@ -8,20 +8,20 @@ const ServiceSidebar = () => {
         <ul className="services-list">
           <li>
             <Link to="/services/service-details" className="active">
-              AI & ML Development
+              Safe Jobs Connect
             </Link>
           </li>
           <li>
-            <Link to="/services/service-details">Data Analytics</Link>
+            <Link to="/services/service-details">Government Schemes</Link>
           </li>
           <li>
-            <Link to="/services/service-details">Data Science</Link>
+            <Link to="/services/service-details">Micro ATM Services</Link>
           </li>
           <li>
-            <Link to="/services/service-details">Artificial Intelligence</Link>
+            <Link to="/services/service-details">PAN Card Center</Link>
           </li>
           <li>
-            <Link to="/services/service-details">Data Visualization</Link>
+            <Link to="/services/service-details">Indo-Nepal Remittance</Link>
           </li>
         </ul>
 
@@ -30,13 +30,13 @@ const ServiceSidebar = () => {
 
           <ul>
             <li>
-              <Link to="#">
-                PDF Download <i className="bx bxs-file-pdf"></i>
+              <Link to="https://dash.onlinesaathi.org/login">
+                Download Brochure <i className="bx bxs-file-pdf"></i>
               </Link>
             </li>
             <li>
-              <Link to="#">
-                Services Details.txt <i className="bx bxs-file-txt"></i>
+              <Link to="https://dash.onlinesaathi.org/login">
+                Download App <i className="bx bxs-file-txt"></i>
               </Link>
             </li>
           </ul>

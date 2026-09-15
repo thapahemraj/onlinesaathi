@@ -12,10 +12,10 @@ const MembershipLevelsPage = () => {
       <Navbar />
 
       <PageBanner
-        pageTitle="Member Ship Levels"
+        pageTitle="Saathi Partnership Levels"
         homePageText="Home"
         homePageUrl="/"
-        activePageText="Member Ship Levels"
+        activePageText="Saathi Partnership Levels"
       />
 
       <div className="membership-levels-area ptb-100">
@@ -26,33 +26,33 @@ const MembershipLevelsPage = () => {
                 <tr>
                   <th aria-hidden="true"></th>
                   <th>
-                    <span className="price">$500</span>
-                    <span className="title">Silver Membership</span>
-                    <span className="desc">You can view few features</span>
+                    <span className="price">Free</span>
+                    <span className="title">Basic User</span>
+                    <span className="desc">Access essential services as a member</span>
                   </th>
                   <th>
-                    <span className="price">$1,000</span>
-                    <span className="title">Gold Membership</span>
-                    <span className="desc">You can view most features</span>
+                    <span className="price">Saathi</span>
+                    <span className="title">Local Agent</span>
+                    <span className="desc">Earn by serving your community</span>
                   </th>
                   <th>
-                    <span className="price">$1,500</span>
-                    <span className="title">Diamond Membership</span>
-                    <span className="desc">You can view all features</span>
+                    <span className="price">Partner</span>
+                    <span className="title">District / State Partner</span>
+                    <span className="desc">Grow the network in your region</span>
                   </th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr>
-                  <td>Number of features</td>
+                  <td>Job matching support</td>
                   <td>4</td>
                   <td>8</td>
                   <td>15</td>
                 </tr>
 
                 <tr>
-                  <td>Investment Fundamentals & Data Analytics</td>
+                  <td>Government scheme assistance</td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
                   </td>
@@ -65,7 +65,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Hands-On Python & R In Data Science</td>
+                  <td>Micro ATM & AEPS services</td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
                   </td>
@@ -78,7 +78,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Complete Data Science Bootcamp</td>
+                  <td>PAN card center</td>
                   <td className="item-check">
                     <i className="bx bx-check"></i>
                   </td>
@@ -91,7 +91,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Programming MasterclassName for Developers</td>
+                  <td>Bill payment & recharges</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -104,7 +104,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Hands-On Artificial Neural Networks</td>
+                  <td>Travel booking services</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -117,7 +117,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>PRINCE2® Practitioner Certification Training</td>
+                  <td>Indo-Nepal remittance</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -130,7 +130,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>PMI-RMP® Certification Training</td>
+                  <td>Insurance offerings</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -143,7 +143,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>PRINCE2® Foundation Certification Training</td>
+                  <td>Sales & marketing training</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -156,7 +156,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>PMP® Plus</td>
+                  <td>Dedicated relationship manager</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -169,7 +169,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>PMP® Renewal Pac</td>
+                  <td>Priority customer support</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -182,7 +182,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Digital Project Manager</td>
+                  <td>Commission & incentive payouts</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -195,7 +195,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Agile Project Management; Agile Delivery</td>
+                  <td>Become a Saathi agent</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -208,7 +208,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Vue JS 2 - The Complete Guide</td>
+                  <td>Expand your service network</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -221,7 +221,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Everything You Need to Program in Python</td>
+                  <td>Access verified job offers</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -234,23 +234,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Mathematical Foundation For Machine Learning</td>
-
-                  <td className="item-none">
-                    <i className="bx bx-x"></i>
-                  </td>
-
-                  <td className="item-none">
-                    <i className="bx bx-x"></i>
-                  </td>
-
-                  <td className="item-check">
-                    <i className="bx bx-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Drawing Course - Beginner to Advanced</td>
+                  <td>Community growth programs</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -263,7 +247,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Deep Learning and Artificial Intelligence</td>
+                  <td>Service reports & analytics</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -276,20 +260,7 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Information About UI/UX Design Degree</td>
-                  <td className="item-check">
-                    <i className="bx bx-check"></i>
-                  </td>
-                  <td className="item-check">
-                    <i className="bx bx-check"></i>
-                  </td>
-                  <td className="item-check">
-                    <i className="bx bx-check"></i>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Photography Photo modify and Beautiful</td>
+                  <td>Startup support & guidance</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -302,7 +273,33 @@ const MembershipLevelsPage = () => {
                 </tr>
 
                 <tr>
-                  <td>Professional IT Expert Certificate Course</td>
+                  <td>Marketing collateral & branding</td>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
+                  </td>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
+                  </td>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Nationwide partner recognition</td>
+                  <td className="item-none">
+                    <i className="bx bx-x"></i>
+                  </td>
+                  <td className="item-none">
+                    <i className="bx bx-x"></i>
+                  </td>
+                  <td className="item-check">
+                    <i className="bx bx-check"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Exclusive training workshops</td>
                   <td className="item-none">
                     <i className="bx bx-x"></i>
                   </td>
@@ -317,18 +314,18 @@ const MembershipLevelsPage = () => {
                 <tr>
                   <td></td>
                   <td>
-                    <Link to="#" className="select-btn">
-                      Get it now
+                    <Link to="https://dash.onlinesaathi.org/login" className="select-btn">
+                      Join now
                     </Link>
                   </td>
                   <td>
-                    <Link to="#" className="select-btn">
-                      Get it now
+                    <Link to="https://dash.onlinesaathi.org/login" className="select-btn">
+                      Become a Saathi
                     </Link>
                   </td>
                   <td>
-                    <Link to="#" className="select-btn">
-                      Get it now
+                    <Link to="https://dash.onlinesaathi.org/login" className="select-btn">
+                      Partner with us
                     </Link>
                   </td>
                 </tr>

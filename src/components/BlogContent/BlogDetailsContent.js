@@ -30,54 +30,50 @@ const BlogDetailsContent = () => {
                       <li>
                         <i className="bx bx-folder-open"></i>
                         <span>Category</span>
-                        <Link to="/blog">Fashion</Link>
+                        <Link to="/blog">Jobs</Link>
                       </li>
                       <li>
                         <i className="bx bx-group"></i>
                         <span>View</span>
-                        <Link to="#">813,454</Link>
+                        <Link to="#">12,500</Link>
                       </li>
                       <li>
                         <i className="bx bx-calendar"></i>
                         <span>Last Updated</span>
-                        <Link to="#">25/04/2020</Link>
+                        <Link to="#">30/04/2025</Link>
                       </li>
                     </ul>
                   </div>
 
-                  <h3>It’s Time To Think Differently About Homeschooling</h3>
+                  <h3>How Migrant Workers Find Jobs Through Online Saathi</h3>
 
                   <p>
-                    Quuntur magni dolores eos qui ratione voluptatem sequi
-                    nesciunt. Neque porro quia non numquam eius modi tempora
-                    incidunt ut labore et dolore magnam dolor sit amet,
-                    consectetur adipisicing.
+                    Migrant workers face many barriers when searching for work,
+                    from verifying employers to understanding application
+                    processes. Online Saathi connects job seekers with local
+                    Saathi agents who understand their skills and needs.
                   </p>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in sed quia non
-                    numquam eius modi tempora incidunt ut labore et dolore
-                    magnam aliquam quaerat voluptatem.
+                    Through our Jobs Connect service, workers are matched with
+                    verified employers, supported through every step of the
+                    application process, and guided toward meaningful,
+                    sustainable work across India.
                   </p>
 
                   <blockquote>
                     <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout.
+                      "The support from Online Saathi was exceptional. I found a
+                      reliable job and my family's future is now secure."
                     </p>
-                    <cite>Tom Cruise</cite>
+                    <cite>Sewa Saathi Agent</cite>
                   </blockquote>
 
                   <p>
-                    Quuntur magni dolores eos qui ratione voluptatem sequi
-                    nesciunt. Neque porro quia non numquam eius modi tempora
-                    incidunt ut labore et dolore magnam dolor sit amet,
-                    consectetur adipisicing.
+                    Saathi agents work directly in local communities, assessing
+                    skills, gathering documents, and ensuring applicants are
+                    prepared for interviews. This local presence makes the
+                    process approachable and reliable for every worker.
                   </p>
 
                   <ul className="wp-block-gallery columns-3">
@@ -100,43 +96,41 @@ const BlogDetailsContent = () => {
                     </li>
                   </ul>
 
-                  <h3>Four major elements that we offer:</h3>
+                  <h3>What we offer through Jobs Connect:</h3>
 
                   <ul className="features-list">
                     <li>
-                      <i className="bx bx-badge-check"></i> Scientific skills
-                      for getting a better result
+                      <i className="bx bx-badge-check"></i> Verified employers
+                      and trusted job listings
                     </li>
                     <li>
-                      <i className="bx bx-badge-check"></i> Communication skills
-                      to getting in touch
+                      <i className="bx bx-badge-check"></i> Local Saathi support
+                      for every step of the application
                     </li>
                     <li>
-                      <i className="bx bx-badge-check"></i> A career overview
-                      opportunity available
+                      <i className="bx bx-badge-check"></i> Skill assessment and
+                      career guidance
                     </li>
                     <li>
-                      <i className="bx bx-badge-check"></i> A good work
-                      environment for work
+                      <i className="bx bx-badge-check"></i> Ongoing support even
+                      after placement
                     </li>
                   </ul>
 
-                  <h3>Setting the mood with incense</h3>
+                  <h3>Going beyond job matching</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in sed quia non
-                    numquam eius modi tempora incidunt ut labore et dolore
-                    magnam aliquam quaerat voluptatem.
+                    Beyond placement, Online Saathi helps workers access
+                    government schemes, open bank accounts, and manage their
+                    finances. Our mission is to create a supportive ecosystem
+                    where every worker can grow with confidence.
                   </p>
 
-                  <h3>The rise of marketing and why you need it</h3>
+                  <h3>How to get started</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud.
+                    Visit your nearest Saathi agent or contact us through our
+                    website to begin your journey. With over 12,500 individuals
+                    placed and 1,500+ Saathis across India, a better opportunity
+                    is closer than you think.
                   </p>
                 </div>
 
@@ -146,9 +140,9 @@ const BlogDetailsContent = () => {
                       <i className="bx bx-purchase-tag"></i>
                     </span>
 
-                    <Link to="/blog">Fashion</Link>
-                    <Link to="/blog">Games</Link>
-                    <Link to="/blog">Travel</Link>
+                    <Link to="/blog">Jobs</Link>
+                    <Link to="/blog">Migrants</Link>
+                    <Link to="/blog">Services</Link>
                   </div>
 
                   <div className="article-share">
@@ -205,15 +199,14 @@ const BlogDetailsContent = () => {
                   <div className="author-profile">
                     <div className="author-profile-title">
                       <img src={user1} className="shadow-sm" alt="Blog post" />
-                      <h4>Chris Orwig</h4>
+                      <h4>Online Saathi</h4>
                       <span className="d-block">
-                        Photographer, Author, Writer
+                        Jobs Connect Team
                       </span>
                       <p>
-                        Chris Orwig is a celebrated photographer, author, and
-                        writer who brings passion to everything he does. Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit sed do
-                        eiusmod tempor.
+                        The Online Saathi team works every day to connect workers
+                        with jobs, government schemes, and essential services
+                        through our network of 1,500+ Saathi agents across India.
                       </p>
                     </div>
                   </div>
@@ -229,12 +222,12 @@ const BlogDetailsContent = () => {
                         </span>
 
                         <span className="prev-link-info-wrapper">
-                          <span className="prev-title">
-                            What Is The MLB Summer Slugger Program?
-                          </span>
-                          <span className="meta-wrapper">
-                            <span className="date-post">January 21, 2020</span>
-                          </span>
+<span className="prev-title">
+                              Accessing Government Schemes Made Simple
+                            </span>
+                            <span className="meta-wrapper">
+                              <span className="date-post">April 28, 2025</span>
+                            </span>
                         </span>
                       </Link>
                     </div>
@@ -244,12 +237,12 @@ const BlogDetailsContent = () => {
                     <div className="info-next-link-wrapper">
                       <Link to="#">
                         <span className="next-link-info-wrapper">
-                          <span className="next-title">
-                            28 Student-Centered Instructional Strategies
-                          </span>
-                          <span className="meta-wrapper">
-                            <span className="date-post">January 19, 2020</span>
-                          </span>
+<span className="next-title">
+                              Empowering Communities Through Sewa Saathi Network
+                            </span>
+                            <span className="meta-wrapper">
+                              <span className="date-post">April 29, 2025</span>
+                            </span>
                         </span>
 
                         <span className="image-next">
@@ -274,21 +267,20 @@ const BlogDetailsContent = () => {
                               className="avatar"
                               alt="Blog post"
                             />
-                            <b className="fn">John Jones</b>
+                            <b className="fn">Suresh Thapa</b>
                             <span className="says">says:</span>
                           </div>
 
                           <div className="comment-metadata">
-                            <span>April 24, 2019 at 10:59 am</span>
+                            <span>April 30, 2025 at 10:59 am</span>
                           </div>
                         </div>
 
                         <div className="comment-content">
                           <p>
-                            Lorem Ipsum has been the industry’s standard dummy
-                            text ever since the 1500s, when an unknown printer
-                            took a galley of type and scrambled it to make a
-                            type specimen.
+                            I applied through my local Saathi and received great
+                            support through the whole process. Highly recommended
+                            for anyone looking for reliable work.
                           </p>
                         </div>
 
@@ -309,21 +301,20 @@ const BlogDetailsContent = () => {
                                   className="avatar"
                                   alt="Blog post"
                                 />
-                                <b className="fn">Steven Smith</b>
+                                <b className="fn">Binita Lama</b>
                                 <span className="says">says:</span>
                               </div>
 
                               <div className="comment-metadata">
-                                <span>April 24, 2019 at 10:59 am</span>
+                                <span>April 30, 2025 at 12:15 pm</span>
                               </div>
                             </div>
 
                             <div className="comment-content">
                               <p>
-                                Lorem Ipsum has been the industry’s standard
-                                dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it
-                                to make a type specimen.
+                                Great article! The Saathi agent near me helped my
+                                family access government schemes easily. Thank you
+                                Online Saathi.
                               </p>
                             </div>
 
@@ -344,21 +335,20 @@ const BlogDetailsContent = () => {
                                       className="avatar"
                                       alt="Blog post"
                                     />
-                                    <b className="fn">Sarah Taylor</b>
+                                    <b className="fn">Raju Sharma</b>
                                     <span className="says">says:</span>
                                   </div>
 
                                   <div className="comment-metadata">
-                                    <span>April 24, 2019 at 10:59 am</span>
+                                    <span>April 30, 2025 at 2:45 pm</span>
                                   </div>
                                 </div>
 
                                 <div className="comment-content">
                                   <p>
-                                    Lorem Ipsum has been the industry’s standard
-                                    dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and
-                                    scrambled it to make a type specimen.
+                                    The support team was responsive and helped me
+                                    understand every step. My journey with Online
+                                    Saathi has been truly rewarding.
                                   </p>
                                 </div>
 
@@ -383,21 +373,20 @@ const BlogDetailsContent = () => {
                               className="avatar"
                               alt="Blog post"
                             />
-                            <b className="fn">John Doe</b>
+                            <b className="fn">Himal Magar</b>
                             <span className="says">says:</span>
                           </div>
 
                           <div className="comment-metadata">
-                            <span>April 24, 2019 at 10:59 am</span>
+                            <span>April 30, 2025 at 4:20 pm</span>
                           </div>
                         </div>
 
                         <div className="comment-content">
                           <p>
-                            Lorem Ipsum has been the industry’s standard dummy
-                            text ever since the 1500s, when an unknown printer
-                            took a galley of type and scrambled it to make a
-                            type specimen.
+                            Online Saathi is a secure and fast platform for
+                            sending money from India to Nepal. The process was
+                            simple and reliable.
                           </p>
                         </div>
 
@@ -418,21 +407,20 @@ const BlogDetailsContent = () => {
                                   className="avatar"
                                   alt="Blog post"
                                 />
-                                <b className="fn">James Anderson</b>
+                                <b className="fn">Ganesh KC</b>
                                 <span className="says">says:</span>
                               </div>
 
                               <div className="comment-metadata">
-                                <span>April 24, 2019 at 10:59 am</span>
+                                <span>April 30, 2025 at 5:00 pm</span>
                               </div>
                             </div>
 
                             <div className="comment-content">
                               <p>
-                                Lorem Ipsum has been the industry’s standard
-                                dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it
-                                to make a type specimen.
+                                As a partner, I can confidently say Online Saathi
+                                genuinely cares about workers and their families.
+                                Keep up the great work.
                               </p>
                             </div>
 

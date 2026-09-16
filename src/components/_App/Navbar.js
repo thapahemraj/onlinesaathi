@@ -2,7 +2,7 @@ import React from "react"
 import { useRecoilState } from "recoil"
 import { collapsedState } from "../../utils/recoil-atoms"
 import { Link } from "gatsby"
-import logo from "../../images/logo.png"
+import logo from "../../images/gallery/logo.svg"
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useRecoilState(collapsedState)
@@ -566,7 +566,7 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </li> */}
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                         <Link
                           to="/blog"
                           activeClassName="active"
@@ -575,7 +575,7 @@ const Navbar = () => {
                         >
                           Blog
                         </Link>
-                      </li>
+                      </li> */}
 
 
                   {/* <li className="nav-item">
@@ -643,7 +643,7 @@ const Navbar = () => {
 
                   <div className="option-item">
                     <Link
-                      to="https://admin.onlinesaathi.org"
+                      to="https://dash.onlinesaathi.org/login"
                       target="_blank"
                       activeClassName="active"
                       onClick={() => setCollapsed(true)}

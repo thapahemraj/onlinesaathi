@@ -1,4 +1,4 @@
-import safeJob from "../images/services/safe job.svg"
+import safeJob from "../images/services/crop_hero.png"
 import scheme from "../images/services/scheme.webp"
 import atm from "../images/services/atm.png"
 import bill from "../images/services/bill.jpeg"

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../../images/logo.png"
+import logo from "../../images/gallery/logo.svg"
 import footerMap from "../../images/footer-map.png"
 import playstore from "../../images/home/playstore.png"
 
@@ -26,7 +26,7 @@ const Footer = () => {
               <ul className="social-link">
                 <li>
                   <a
-                    href="https://www.facebook.com/"
+                    href="https://www.youtube.com/@onlinesaathi"
                     className="d-block"
                     target="_blank"
                     rel="noreferrer"
@@ -36,27 +36,27 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/"
+                    href="https://www.whatsapp.com/channel/0029VaVLYnq6LwHfwUg2SK2c"
                     className="d-block"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="bx bxl-twitter"></i>
+                    <i className="bx bxl-whatsapp"></i>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://www.youtube.com/@onlinesaathi"
                     className="d-block"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="bx bxl-instagram"></i>
+                    <i className="bx bxl-youtube"></i>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/company/online-saathi/"
                     className="d-block"
                     target="_blank"
                     rel="noreferrer"

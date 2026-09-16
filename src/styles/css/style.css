@@ -400,6 +400,10 @@ textarea.form-control {
   padding-left: 0;
   padding-right: 0;
 }
+.Rewy-nav .navbar .navbar-brand img {
+  max-height: 48px;
+  width: auto;
+}
 .Rewy-nav .navbar ul {
   padding-left: 0;
   list-style-type: none;
@@ -9678,6 +9682,10 @@ Footer Area CSS
   margin-bottom: 15px;
   font-size: 15px;
   display: inline-block;
+}
+.single-footer-widget .logo img {
+  max-width: 220px;
+  height: auto;
 }
 .single-footer-widget .social-link {
   padding-left: 0;

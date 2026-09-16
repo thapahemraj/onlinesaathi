@@ -418,6 +418,10 @@ textarea.form-control {
                 left: 0;
                 right: 0;
             };
+            img {
+                max-height: 48px;
+                width: auto;
+            }
         }
         ul {
             padding-left: 0;
@@ -11326,6 +11330,11 @@ Footer Area CSS
         margin-bottom: 15px;
         font-size: 15px;
         display: inline-block;
+
+        img {
+            max-width: 220px;
+            height: auto;
+        }
     }
     .social-link {
         padding-left: 0;

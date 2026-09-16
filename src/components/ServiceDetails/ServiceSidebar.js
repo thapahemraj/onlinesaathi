@@ -1,28 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
+import services from "../../data/services"
 
-const ServiceSidebar = () => {
+const ServiceSidebar = ({ activeSlug }) => {
   return (
     <>
       <div className="services-details-info">
         <ul className="services-list">
-          <li>
-            <Link to="/services/service-details" className="active">
-              Safe Jobs Connect
-            </Link>
-          </li>
-          <li>
-            <Link to="/services/service-details">Government Schemes</Link>
-          </li>
-          <li>
-            <Link to="/services/service-details">Micro ATM Services</Link>
-          </li>
-          <li>
-            <Link to="/services/service-details">PAN Card Center</Link>
-          </li>
-          <li>
-            <Link to="/services/service-details">Indo-Nepal Remittance</Link>
-          </li>
+          {services.map(service => (
+            <li key={service.slug}>
+              <Link
+                to={`/services/${service.slug}`}
+                className={service.slug === activeSlug ? "active" : ""}
+              >
+                {service.title}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         <div className="download-file">

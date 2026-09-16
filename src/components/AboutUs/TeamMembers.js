@@ -140,7 +140,7 @@ const TeamMembers = () => {
                 </div>
                 <div className="content">
                   <h3>Hemraj Thapa</h3>
-                  <span>Chief Operation Officer</span>
+                  <span>Chief Technology Officer</span>
 
                   <ul className="social">
                     <li>
@@ -194,8 +194,8 @@ const TeamMembers = () => {
                   <img src={scientist4} alt="about" />
                 </div>
                 <div className="content">
-                  <h3>Ganesh Bahadur KC</h3>
-                  <span>Account Officer</span>
+                  <h3>Puspa Raj Shestha</h3>
+                  <span>Chief Operating Officer</span>
 
                   <ul className="social">
                     <li>

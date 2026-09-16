@@ -795,6 +795,7 @@ $value_nine: 1550px;
                 font-size: 16px;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
+                width: auto;
 
                 span {
                     margin-bottom: 2px;
@@ -5600,12 +5601,20 @@ $value_nine: 1550px;
         }
     }
 
-    .scientist-area {
+.scientist-area {
         &.bg-color {
             &::before {
-                height: 238px;
+                display: none;
             }
         }
+    }
+    .team-search-form {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 20px;
+    }
+    .team-department-select {
+        width: 100%;
     }
     .single-scientist-box {
         .content {

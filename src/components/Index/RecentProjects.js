@@ -8,6 +8,45 @@ import project4 from "../../images/projects/project4.jpg"
 import project5 from "../../images/projects/project5.jpg"
 import project6 from "../../images/projects/project6.jpg"
 
+const projects = [
+  {
+    title: "Jobs Connect",
+    slug: "safe-jobs-connect",
+    stat: "12,500+ Individuals Placed",
+    image: project1,
+  },
+  {
+    title: "Micro ATM Services",
+    slug: "micro-atm-services",
+    stat: "AEPS & Banking Access",
+    image: project2,
+  },
+  {
+    title: "Government Schemes",
+    slug: "social-welfare-schemes",
+    stat: "500+ Schemes Accessible",
+    image: project3,
+  },
+  {
+    title: "Indo-Nepal Remittance",
+    slug: "neo-banking-remittance",
+    stat: "Fast & Secure Transfers",
+    image: project4,
+  },
+  {
+    title: "Bill Payment",
+    slug: "travel-bill-payments",
+    stat: "One-stop Payments",
+    image: project5,
+  },
+  {
+    title: "Sewa Saathi Network",
+    slug: "safe-jobs-connect",
+    stat: "1500+ Agents Nationwide",
+    image: project6,
+  },
+]
+
 const RecentProjects = () => {
   return (
     <>
@@ -25,121 +64,37 @@ const RecentProjects = () => {
           </div>
 
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="single-projects-box">
-                <div className="image">
-                  <img src={project1} alt="project" />
+            {projects.map(project => (
+              <div key={project.title} className="col-lg-4 col-md-6">
+                <div className="single-projects-box">
+                  <div className="image">
+                    <img src={project.image} alt="project" />
 
-                  <Link className="link-btn" to="/case-studies/case-studies-details">
-                    <i className="bx bx-plus"></i>
-                  </Link>
-                </div>
-
-                <div className="content">
-                  <h3>
-                    <Link to="/case-studies/case-studies-details">Jobs Connect</Link>
-                  </h3>
-                  <span>12,500+ Individuals Placed</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="single-projects-box">
-                <div className="image">
-                  <img src={project2} alt="project" />
-
-                  <Link className="link-btn" to="/case-studies/case-studies-details">
-                    <i className="bx bx-plus"></i>
-                  </Link>
-                </div>
-
-                <div className="content">
-                  <h3>
-                    <Link to="/case-studies/case-studies-details">
-                      Micro ATM Services
+                    <Link
+                      className="link-btn"
+                      to={`/services/${project.slug}`}
+                    >
+                      <i className="bx bx-plus"></i>
                     </Link>
-                  </h3>
-                  <span>AEPS & Banking Access</span>
+
+                    <h3 className="projects-box-heading">
+                      <Link to={`/services/${project.slug}`}>
+                        {project.title}
+                      </Link>
+                    </h3>
+                  </div>
+
+                  <div className="content">
+                    <h3>
+                      <Link to={`/services/${project.slug}`}>
+                        {project.title}
+                      </Link>
+                    </h3>
+                    <span>{project.stat}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="single-projects-box">
-                <div className="image">
-                  <img src={project3} alt="project" />
-
-                  <Link className="link-btn" to="/case-studies/case-studies-details">
-                    <i className="bx bx-plus"></i>
-                  </Link>
-                </div>
-
-                <div className="content">
-                  <h3>
-                    <Link to="/case-studies/case-studies-details">Government Schemes</Link>
-                  </h3>
-                  <span>500+ Schemes Accessible</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="single-projects-box">
-                <div className="image">
-                  <img src={project4} alt="project" />
-
-                  <Link className="link-btn" to="/case-studies/case-studies-details">
-                    <i className="bx bx-plus"></i>
-                  </Link>
-                </div>
-
-                <div className="content">
-                  <h3>
-                    <Link to="/case-studies/case-studies-details">Indo-Nepal Remittance</Link>
-                  </h3>
-                  <span>Fast & Secure Transfers</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="single-projects-box ">
-                <div className="image">
-                  <img src={project5} alt="project" />
-
-                  <Link className="link-btn" to="/case-studies/case-studies-details">
-                    <i className="bx bx-plus"></i>
-                  </Link>
-                </div>
-
-                <div className="content">
-                  <h3>
-                    <Link to="/case-studies/case-studies-details">Bill Payment</Link>
-                  </h3>
-                  <span>One-stop Payments</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="single-projects-box">
-                <div className="image">
-                  <img src={project6} alt="project" />
-
-                  <Link className="link-btn" to="/case-studies/case-studies-details">
-                    <i className="bx bx-plus"></i>
-                  </Link>
-                </div>
-
-                <div className="content">
-                  <h3>
-                    <Link to="/case-studies/case-studies-details">Sewa Saathi Network</Link>
-                  </h3>
-                  <span>1500+ Agents Nationwide</span>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

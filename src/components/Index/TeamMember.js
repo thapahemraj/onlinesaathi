@@ -183,7 +183,7 @@ const TeamMember = () => {
                 </div>
                 <div className="content">
                   <h3>Hemraj Thapa</h3>
-                  <span>Chief Operation Officer</span>
+                  <span>Chief Technology Officer</span>
                 </div>
               </div>
             </div>
@@ -237,8 +237,8 @@ const TeamMember = () => {
                   </ul>
                 </div>
                 <div className="content">
-                  <h3>Ganesh Bahadur KC</h3>
-                  <span>Account Officer</span>
+                  <h3>Puspa Raj Shestha</h3>
+                  <span>Chief Operating Officer</span>
                 </div>
               </div>
             </div>

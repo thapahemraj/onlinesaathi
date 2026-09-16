@@ -1,17 +1,17 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
-import process1 from "../../images/process/process1.png"
-import process2 from "../../images/process/process2.png"
-import process3 from "../../images/process/process3.png"
-import process4 from "../../images/process/process4.png"
-import process5 from "../../images/process/process5.png"
-import process6 from "../../images/process/process6.png"
+import process1 from "../../images/process/step1.jpg"
+import process2 from "../../images/process/step2.jpg"
+import process3 from "../../images/process/step3.jpg"
+import process4 from "../../images/process/step4.jpg"
+import process5 from "../../images/process/step5.jpg"
+import process6 from "../../images/process/step6.jpg"
 import shape from "../../images/shape/circle-shape1.png"
 
 const HowItWork = () => {
   return (
     <>
-      <section className="process-area pb-70">
+      <section className="process-area pb-70 process-area-photo">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">

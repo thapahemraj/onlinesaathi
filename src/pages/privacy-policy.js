@@ -22,9 +22,6 @@ const PrivacyPolicyPage = () => {
           <div className="row justify-content-center">
             <div className="col-lg-8 col-md-12">
               <div className="privacy-policy-content">
-                <p>
-                  <i>This Privacy Policy was last updated on January 1, 2025.</i>
-                </p>
                 <h3>1. Commitment to Privacy</h3>
                 <blockquote className="blockquote">
                   <p>
@@ -66,7 +63,10 @@ const PrivacyPolicyPage = () => {
                   <li>Business Registration Certificates</li>
                   <li>Director Personal Details</li>
                   <li>Type of Business</li>
-                  <li>Registered Address</li>
+                  <li>
+                    Registered Address (State, District, City, Municipality,
+                    Ward, Street/Tole)
+                  </li>
                   <li>Secondary Contact Information</li>
                   <li>Bank Details (optional)</li>
                   <li>
@@ -82,7 +82,9 @@ const PrivacyPolicyPage = () => {
                 <h4>2.5 App Permissions</h4>
                 <ul>
                   <li>Camera and Photos: For KYC and profile verification</li>
-                  <li>SMS Access: To send and receive transaction confirmations</li>
+                  <li>
+                    SMS Access: To send and receive transaction confirmations
+                  </li>
                   <li>
                     Contacts Access: To simplify number selection (no storage or
                     sharing)
@@ -126,9 +128,12 @@ const PrivacyPolicyPage = () => {
                   </li>
                   <li>
                     Deletion: Inactive accounts (6 months to 3 years) may be
-                    deleted if: the account balance is zero, no pending
-                    transactions exist, or fraudulent/misuse activities are
-                    detected.
+                    deleted if:
+                    <ul>
+                      <li>The account balance is zero</li>
+                      <li>No pending transactions exist</li>
+                      <li>Fraudulent/misuse activities are detected</li>
+                    </ul>
                   </li>
                   <li>
                     For job applicants, data may be retained for evaluation even
@@ -147,9 +152,14 @@ const PrivacyPolicyPage = () => {
                 <p>
                   We may update this Privacy Policy to reflect changes in our
                   practices or legal obligations. Significant changes will be
-                  communicated via SMS, email, or in-app notifications. The
-                  latest version will be posted on our website.
+                  communicated via:
                 </p>
+                <ul>
+                  <li>SMS</li>
+                  <li>Email</li>
+                  <li>In-app notifications</li>
+                </ul>
+                <p>The latest version will be posted on our website.</p>
 
                 <h3>8. Contact Information</h3>
                 <p>
@@ -166,6 +176,10 @@ const PrivacyPolicyPage = () => {
                   <li>Website: www.onlinesaathi.org</li>
                   <li>Phone: +91 84888 56251</li>
                 </ul>
+                <p>
+                  Your continued use of Online Saathi services means you agree
+                  to the terms outlined in this Privacy Policy.
+                </p>
               </div>
             </div>
           </div>

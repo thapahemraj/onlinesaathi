@@ -986,6 +986,11 @@ textarea.form-control {
 .main-banner-image {
   text-align: center;
 }
+.main-banner-image img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+}
 
 .banner-section {
   position: relative;
@@ -1906,6 +1911,11 @@ About Area CSS
   position: relative;
   z-index: 1;
 }
+.about-img img {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+}
 .about-img .shape {
   position: absolute;
   left: -15px;
@@ -2101,6 +2111,11 @@ Our Mission Area CSS
   text-align: center;
   position: relative;
   z-index: 1;
+}
+.our-mission-image img {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
 }
 .our-mission-image .shape {
   position: absolute;
@@ -2408,6 +2423,7 @@ History Area CSS
   transform: translateY(-50%);
   color: #6b6b84;
   font-size: 15px;
+  width: 120px;
 }
 .history-timeline .timeline-block .timeline-date span {
   display: block;
@@ -2444,6 +2460,14 @@ History Area CSS
   margin-bottom: 15px;
   font-size: 25px;
 }
+.history-timeline .timeline-block .timeline-content .image img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 8px;
+}
 .history-timeline.history-timeline-style-two::before {
   left: auto;
   right: 130px;
@@ -2461,6 +2485,7 @@ History Area CSS
   text-align: left;
   right: 0;
   left: auto;
+  width: 120px;
 }
 .history-timeline.history-timeline-style-two .timeline-block .timeline-icon {
   left: auto;
@@ -2844,8 +2869,19 @@ Services Details Area CSS
   border-radius: 5px;
 }
 .services-details-image img {
+  display: block;
+  margin: 0 auto;
   border-radius: 5px;
   width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .services-details-image img {
+    max-height: 260px;
+  }
 }
 
 .services-details-image-slides.owl-theme {
@@ -3273,6 +3309,12 @@ How It's Work Area CSS
 }
 .single-process-box .image {
   margin-bottom: 25px;
+}
+.process-area-photo .single-process-box .image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 .single-process-box h3 {
   margin-bottom: 12px;
@@ -4349,6 +4391,11 @@ Projects Area CSS
   background-color: #fafafb;
   border-radius: 5px;
   text-align: center;
+  transition: 0.5s;
+}
+.single-projects-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(34, 22, 56, 0.12);
 }
 .single-projects-box .image {
   border-radius: 5px 5px 0 0;
@@ -4357,7 +4404,7 @@ Projects Area CSS
 }
 .single-projects-box .image img {
   border-radius: 5px 5px 0 0;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 .single-projects-box .image::before {
   content: "";
@@ -4366,7 +4413,12 @@ Projects Area CSS
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #5222ff;
+  background-image: linear-gradient(
+    to top,
+    rgba(22, 14, 70, 0.92) 0%,
+    rgba(82, 34, 255, 0.4) 55%,
+    rgba(82, 34, 255, 0) 100%
+  );
   border-radius: 5px;
   z-index: 1;
   opacity: 0;
@@ -4378,7 +4430,7 @@ Projects Area CSS
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%) scale(0.6);
   width: 45px;
   height: 45px;
   line-height: 52.5px;
@@ -4412,10 +4464,9 @@ Projects Area CSS
   font-size: 16.5px;
 }
 .single-projects-box:hover .image img {
-  transform: scale(1.3) rotate(5deg);
+  transform: scale(1.12) rotate(1.5deg);
 }
 .single-projects-box:hover .image::before {
-  margin: 10px;
   opacity: 1;
   visibility: visible;
 }
@@ -4423,7 +4474,57 @@ Projects Area CSS
   margin-top: 0;
   opacity: 1;
   visibility: visible;
+  transform: translateY(-50%) translateX(-50%) scale(1);
   cursor: pointer;
+}
+.single-projects-box .image .projects-box-heading {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #ffffff;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: 0.6s ease 0.05s;
+}
+.single-projects-box .image .projects-box-heading a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background-color: rgba(22, 18, 70, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 10px 25px rgba(10, 5, 40, 0.35);
+  color: #ffffff;
+  transition: 0.4s;
+}
+.single-projects-box .image .projects-box-heading a::before {
+  content: "";
+  flex-shrink: 0;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.85;
+  transition: width 0.4s ease;
+}
+.single-projects-box:hover .image .projects-box-heading a::before {
+  width: 40px;
+}
+.single-projects-box:hover .image .projects-box-heading {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .single-projects-box.border {
   border-radius: 0;
@@ -4748,6 +4849,77 @@ Scientist Area CSS
 }
 .single-scientist-box:hover .image::before {
   height: 80%;
+}
+
+.team-search-section {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+.team-search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e5ee;
+  border-radius: 40px;
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(34, 22, 56, 0.08);
+}
+.team-search-input {
+  position: relative;
+  flex: 1;
+}
+.team-search-input i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #6b6b84;
+  font-size: 20px;
+}
+.team-search-input .form-control {
+  height: 44px;
+  border: none;
+  background-color: transparent;
+  border-radius: 40px;
+  padding-left: 45px;
+  font-size: 15px;
+  color: #221638;
+}
+.team-search-input .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.team-department-select {
+  width: 220px;
+  height: 44px;
+  border: none;
+  border-radius: 40px;
+  background-color: #f1f8fb;
+  color: #221638;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 18px;
+}
+.team-department-select:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+.team-department {
+  display: block;
+  margin-top: 4px;
+  color: #5222ff !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.team-no-results {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 17px;
+  color: #6b6b84;
 }
 
 .col-lg-3:nth-child(2) .single-scientist-box .image::before, .col-lg-3:nth-child(4) .single-scientist-box .image::before, .col-lg-3:nth-child(6) .single-scientist-box .image::before, .col-lg-3:nth-child(8) .single-scientist-box .image::before, .col-lg-3:nth-child(10) .single-scientist-box .image::before {
@@ -9710,4 +9882,161 @@ Go Top CSS
   transition: 0.5s;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   transform: translateY(-5px);
+}
+
+/* ---------- Partners section (marquee) ---------- */
+.partners-section {
+  width: 100%;
+  background-color: transparent;
+  padding: 3rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .partners-section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partners-section {
+    padding: 5rem 2rem;
+  }
+}
+
+.partners-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1250px;
+  
+}
+
+.partners-header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+  text-align: center;
+}
+
+.partners-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #006b9e;
+}
+
+.partners-title {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: #11182d;
+}
+
+@media (min-width: 640px) {
+  .partners-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partners-title {
+    font-size: 40px;
+  }
+}
+
+.partners-viewport {
+  margin: 2.5rem auto 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.partners-track-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+
+.partners-track {
+  display: flex;
+  width: max-content;
+}
+
+.partners-slide-set {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.partners-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  width: 11rem;
+  padding: 0 0.75rem;
+  flex-shrink: 0;
+}
+
+.partners-logo {
+  max-height: 3.5rem;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.partners-fade-left,
+.partners-fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .partners-fade-left,
+  .partners-fade-right {
+    width: 6rem;
+  }
+}
+
+.partners-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.85), transparent);
+}
+
+.partners-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.85), transparent);
+}
+
+.footer-area .single-footer-widget .play-store-link {
+  display: block;
+  width: 140px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: 0.4s;
+}
+.footer-area .single-footer-widget .play-store-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.footer-area .single-footer-widget .play-store-link:hover {
+  opacity: 0.85;
+}
+.footer-area .single-footer-widget .play-store-link:hover {
+  background-color: #5222ff;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

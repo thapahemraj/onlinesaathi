@@ -238,15 +238,87 @@ const Navbar = () => {
                   </li>
 
                   <li className="nav-item">
+                    <Link
+                      to="#"
+                      onClick={e => e.preventDefault()}
+                      className="nav-link"
+                    >
+                      Services <i className="bx bx-chevron-down"></i>
+                    </Link>
+
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
                         <Link
                           to="/services"
                           activeClassName="active"
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Services
+                          All Services
                         </Link>
                       </li>
+                      <li className="nav-item">
+                        <Link
+                          to="/services/safe-jobs-connect"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          Safe Jobs Connect
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          to="/services/social-welfare-schemes"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          Social Welfare Schemes
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          to="/services/micro-atm-services"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          Micro ATM Services
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          to="/services/pan-card-center"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          PAN Card Center
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          to="/services/travel-bill-payments"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          Travel & Bill Payments
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          to="/services/neo-banking-remittance"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          Neo Banking & Remittance
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
 
                   {/* <li className="nav-item">
                     <Link
@@ -473,7 +545,7 @@ const Navbar = () => {
 
                       <li className="nav-item">
                         <Link
-                          to="/terms-of-service"
+                          to="/terms-condition"
                           activeClassName="active"
                           onClick={() => setCollapsed(true)}
                           className="nav-link"

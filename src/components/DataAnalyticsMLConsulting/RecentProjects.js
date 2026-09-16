@@ -31,14 +31,25 @@ const RecentProjects = () => {
                 <div className="image">
                   <img src={ProjectImage1} alt="Project" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
+
+                  <h3 className="projects-box-heading">
+                    <Link to="/case-studies/case-studies-details">
+                      Movie Recommendation
+                    </Link>
+                  </h3>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Movie Recommendation</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Movie Recommendation
+                    </Link>
                   </h3>
                   <span>System Project</span>
                 </div>
@@ -50,9 +61,18 @@ const RecentProjects = () => {
                 <div className="image">
                   <img src={ProjectImage2} alt="Project" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
+
+                  <h3 className="projects-box-heading">
+                    <Link to="/case-studies/case-studies-details">
+                      Customer Segmentation
+                    </Link>
+                  </h3>
                 </div>
 
                 <div className="content">
@@ -71,14 +91,25 @@ const RecentProjects = () => {
                 <div className="image">
                   <img src={ProjectImage3} alt="Project" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
+
+                  <h3 className="projects-box-heading">
+                    <Link to="/case-studies/case-studies-details">
+                      Data Analysis
+                    </Link>
+                  </h3>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Data Analysis</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Data Analysis
+                    </Link>
                   </h3>
                   <span>Web Project</span>
                 </div>
@@ -90,14 +121,25 @@ const RecentProjects = () => {
                 <div className="image">
                   <img src={ProjectImage4} alt="Project" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
+
+                  <h3 className="projects-box-heading">
+                    <Link to="/case-studies/case-studies-details">
+                      Detection Project
+                    </Link>
+                  </h3>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Detection Project</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Detection Project
+                    </Link>
                   </h3>
                   <span>Programming</span>
                 </div>
@@ -109,14 +151,25 @@ const RecentProjects = () => {
                 <div className="image">
                   <img src={ProjectImage5} alt="Project" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
+
+                  <h3 className="projects-box-heading">
+                    <Link to="/case-studies/case-studies-details">
+                      Data Scientist
+                    </Link>
+                  </h3>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Data Scientist</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Data Scientist
+                    </Link>
                   </h3>
                   <span>Data Science</span>
                 </div>
@@ -128,14 +181,25 @@ const RecentProjects = () => {
                 <div className="image">
                   <img src={ProjectImage6} alt="Project" />
 
-                  <Link to="/case-studies/case-studies-details" className="link-btn">
+                  <Link
+                    to="/case-studies/case-studies-details"
+                    className="link-btn"
+                  >
                     <i className="bx bx-plus"></i>
                   </Link>
+
+                  <h3 className="projects-box-heading">
+                    <Link to="/case-studies/case-studies-details">
+                      Benefits Research
+                    </Link>
+                  </h3>
                 </div>
 
                 <div className="content">
                   <h3>
-                    <Link to="/case-studies/case-studies-details">Benefits Research</Link>
+                    <Link to="/case-studies/case-studies-details">
+                      Benefits Research
+                    </Link>
                   </h3>
                   <span>Science Projects</span>
                 </div>

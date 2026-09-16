@@ -15,4 +15,21 @@ exports.createPages = async ({ actions }) => {
     context: {},
     defer: true,
   })
+
+  const serviceSlugs = [
+    "safe-jobs-connect",
+    "social-welfare-schemes",
+    "micro-atm-services",
+    "pan-card-center",
+    "travel-bill-payments",
+    "neo-banking-remittance",
+  ]
+
+  serviceSlugs.forEach(slug => {
+    createPage({
+      path: `/services/${slug}`,
+      component: require.resolve("./src/templates/service-detail.js"),
+      context: { slug },
+    })
+  })
 }

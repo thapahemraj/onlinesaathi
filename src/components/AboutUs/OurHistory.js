@@ -1,9 +1,9 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
-import history1 from "../../images/history/history1.jpg"
-import history2 from "../../images/history/history2.jpg"
+import history1 from "../../images/about/chairman.jpeg"
+import history2 from "../../images/about/cutomer support.svg"
 import history3 from "../../images/history/history3.jpg"
-import history4 from "../../images/history/history4.jpg"
+import history4 from "../../images/about/group-workers.avif"
 
 const OurHistory = () => {
   return (

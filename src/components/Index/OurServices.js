@@ -1,6 +1,6 @@
 import React from "react"
-import service1 from "../../images/services/service1.png"
-import service2 from "../../images/services/service2.png"
+import service1 from "../../images/home/Home-img-2.svg"
+import service2 from "../../images/home/Home-img-3.svg"
 import starIcon from "../../images/star-icon.png"
 
 const OurServices = () => {

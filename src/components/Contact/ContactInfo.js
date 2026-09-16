@@ -15,7 +15,7 @@ const ContactInfo = () => {
                   <i className="bx bx-map"></i>
                 </div>
                 <h3>Our Address</h3>
-                <p>309 3rd Floor The Atlanta Business Hub, Nana Chiloda, Ahmedabad, Gujarat 382330</p>
+                <p>The Antelia Business Hub, 405, Sardar Patel Ring Rd, Naroda, Ahmedabad, Gujarat 382330</p>
               </div>
             </div>
 

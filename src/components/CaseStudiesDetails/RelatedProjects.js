@@ -20,14 +20,14 @@ const RelatedProjects = () => {
                   <img src={icon1} alt="about" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Safe Jobs Connect</Link>
+                  <Link to="/services/safe-jobs-connect">Safe Jobs Connect</Link>
                 </h3>
                 <p>
                   Verified job listings with local Saathi support from skill
                   assessment to application and beyond.
                 </p>
 
-                <Link to="/services/service-details" className="read-more-btn">
+                <Link to="/services/safe-jobs-connect" className="read-more-btn">
                   Read More <i className="flaticon-right"></i>
                 </Link>
               </div>
@@ -39,14 +39,14 @@ const RelatedProjects = () => {
                   <img src={icon2} alt="about" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Micro ATM Services</Link>
+                  <Link to="/services/micro-atm-services">Micro ATM Services</Link>
                 </h3>
                 <p>
                   Banking access closer to home with AEPS services and assisted
                   transactions through your local Saathi.
                 </p>
 
-                <Link to="/services/service-details" className="read-more-btn">
+                <Link to="/services/micro-atm-services" className="read-more-btn">
                   Read More <i className="flaticon-right"></i>
                 </Link>
               </div>
@@ -58,14 +58,14 @@ const RelatedProjects = () => {
                   <img src={icon3} alt="about" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Government Schemes</Link>
+                  <Link to="/services/social-welfare-schemes">Government Schemes</Link>
                 </h3>
                 <p>
                   Guidance and application support for social welfare schemes,
                   making essential benefits accessible to all.
                 </p>
 
-                <Link to="/services/service-details" className="read-more-btn">
+                <Link to="/services/social-welfare-schemes" className="read-more-btn">
                   Read More <i className="flaticon-right"></i>
                 </Link>
               </div>

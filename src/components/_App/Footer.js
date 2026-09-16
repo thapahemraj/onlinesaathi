@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.png"
 import footerMap from "../../images/footer-map.png"
+import playstore from "../../images/home/playstore.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -15,6 +16,8 @@ const Footer = () => {
               <Link to="/" className="logo">
                 <img src={logo} alt="logo" />
               </Link>
+
+              
               <p>
                 Online Saathi is building a strong worker community that connects
                 people with jobs, support, and opportunities to grow together.
@@ -62,6 +65,16 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
+
+              <a
+                href="https://play.google.com/store/search?q=online+saathi+app&c=apps&hl=en"
+                className="play-store-link"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Get it on Google Play"
+              >
+                <img src={playstore} alt="Get it on Google Play" />
+              </a>
             </div>
           </div>
 
@@ -86,6 +99,7 @@ const Footer = () => {
                   <Link to="/contact">Contact</Link>
                 </li>
               </ul>
+              
             </div>
           </div>
 
@@ -120,7 +134,7 @@ const Footer = () => {
               <ul className="footer-contact-info">
                 <li>
                   <i className="bx bx-map"></i>
-                  309 3rd Floor The Atlanta Business Hub, Nana Chiloda,  <br /> Ahmedabad, Gujarat 382330,
+                  The Antelia Business Hub, 405, Sardar Patel Ring Rd, Naroda, Ahmedabad, Gujarat 382330
                 </li>
                 <li>
                   <i className="bx bx-phone-call"></i>
@@ -160,7 +174,7 @@ const Footer = () => {
                   <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="/terms-of-service">Terms & Conditions</Link>
+                  <Link to="/terms-condition">Terms & Conditions</Link>
                  </li>
               </ul>
             </div>

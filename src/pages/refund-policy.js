@@ -23,7 +23,7 @@ const RefundPolicyPage = () => {
             <div className="col-lg-8 col-md-12">
               <div className="privacy-policy-content">
                 <p>
-                  <i>This Refund Policy was last updated on January 1, 2025.</i>
+                  <i>Effective Date: April 22, 2024</i>
                 </p>
 
                 <h3>1. Overview</h3>
@@ -145,6 +145,8 @@ const RefundPolicyPage = () => {
                   <li>Phone: +91-9099005251</li>
                   <li>Website: www.onlinesaathi.org</li>
                 </ul>
+
+                <p>By using Online Saathi, you agree to this Refund Policy.</p>
               </div>
             </div>
           </div>

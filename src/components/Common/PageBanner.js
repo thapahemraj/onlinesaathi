@@ -8,6 +8,8 @@ const PageBanner = ({
   pageTitle,
   homePageUrl,
   homePageText,
+  middlePageText,
+  middlePageUrl,
   activePageText,
 }) => {
   return (
@@ -20,6 +22,11 @@ const PageBanner = ({
               <li>
                 <Link to={homePageUrl}>{homePageText}</Link>
               </li>
+              {middlePageText && middlePageUrl ? (
+                <li>
+                  <Link to={middlePageUrl}>{middlePageText}</Link>
+                </li>
+              ) : null}
               <li>{activePageText}</li>
             </ul>
           </div>

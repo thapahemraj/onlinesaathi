@@ -452,7 +452,7 @@ const NavbarTwo = () => {
 
                       <li className="nav-item">
                         <Link
-                          to="/terms-of-service"
+                          to="/terms-condition"
                           activeClassName="active"
                           onClick={() => setCollapsed(true)}
                           className="nav-link"

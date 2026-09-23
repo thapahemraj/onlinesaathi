@@ -457,8 +457,7 @@ const TermsOfServicePage = () => {
                     India.
                   </li>
                   <li>
-                    Corporate Office: 309, The Atlanta Business Hub, Naroda Ring
-                    Road, Ahmedabad, Gujarat - 382330, India.
+                    Corporate Office: The Antelia Business Hub, 405, Sardar Patel Ring Rd, Naroda, Ahmedabad, Gujarat 382330.
                   </li>
                   <li>General Inquiries: admin@onlinesaathi.org</li>
                   <li>Grievance Redressal Officer: ceo@onlinesaathi.org</li>

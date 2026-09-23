@@ -155,13 +155,7 @@ const Footer = () => {
               <p>
                 Copyright @{currentYear} <strong>Online Saathi</strong> All rights
                 reserved{" "}
-                <a
-                  target="_blank"
-                  href="https://hrttechnology.com.np/"
-                  rel="noreferrer"
-                >
                   Online Saathi
-                </a>
               </p>
             </div>
 

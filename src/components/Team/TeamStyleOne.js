@@ -99,7 +99,7 @@ const TeamStyleOne = () => {
       <ul className="social">
         <li>
           <Link
-            to="https://www.facebook.com/"
+            to="#"
             className="d-block"
             target="_blank"
             rel="noreferrer"
@@ -109,7 +109,7 @@ const TeamStyleOne = () => {
         </li>
         <li>
           <Link
-            to="https://twitter.com/"
+            to="#"
             className="d-block"
             target="_blank"
             rel="noreferrer"
@@ -119,7 +119,7 @@ const TeamStyleOne = () => {
         </li>
         <li>
           <Link
-            to="https://www.instagram.com/"
+            to="#"
             className="d-block"
             target="_blank"
             rel="noreferrer"
@@ -129,7 +129,7 @@ const TeamStyleOne = () => {
         </li>
         <li>
           <Link
-            to="https://www.linkedin.com/"
+            to="#"
             className="d-block"
             target="_blank"
             rel="noreferrer"

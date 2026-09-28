@@ -31,40 +31,40 @@ const TeamMember = () => {
                   <ul className="social">
                     <li>
                       <a
-                        href="https://www.facebook.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-facebook"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://twitter.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-twitter"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-instagram"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-linkedin"></i>
                       </a>
@@ -86,40 +86,40 @@ const TeamMember = () => {
                   <ul className="social">
                     <li>
                       <a
-                        href="https://www.facebook.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-facebook"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://twitter.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-twitter"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-instagram"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-linkedin"></i>
                       </a>
@@ -141,40 +141,40 @@ const TeamMember = () => {
                   <ul className="social">
                     <li>
                       <a
-                        href="https://www.facebook.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-facebook"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://twitter.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-twitter"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-instagram"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-linkedin"></i>
                       </a>
@@ -196,40 +196,40 @@ const TeamMember = () => {
                   <ul className="social">
                     <li>
                       <a
-                        href="https://www.facebook.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-facebook"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://twitter.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-twitter"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-instagram"></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/"
+                        href="#"
                         className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={e => e.preventDefault()}
+                        style={{ cursor: "default" }}
                       >
                         <i className="bx bxl-linkedin"></i>
                       </a>

@@ -4,6 +4,7 @@ import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import Banner from "../components/Index/Banner"
 import OurSolutions from "../components/Index/OurSolutions"
+import LatestJobs from "../components/Index/LatestJobs"
 import OurServices from "../components/Index/OurServices"
 import OurFeatures from "../components/Index/OurFeatures"
 import TeamMember from "../components/Index/TeamMember" 
@@ -23,6 +24,8 @@ const IndexPage = () => (
     <Banner />
 
     <OurSolutions />
+
+    <LatestJobs />
 
     <OurServices />
 

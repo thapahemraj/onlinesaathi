@@ -3,6 +3,7 @@ import { useRecoilState } from "recoil"
 import { collapsedState } from "../../utils/recoil-atoms"
 import { Link } from "gatsby"
 import logo from "../../images/gallery/logo.svg"
+import LoginOrProfile from "./LoginOrProfile"
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useRecoilState(collapsedState)
@@ -642,16 +643,7 @@ const Navbar = () => {
                   </div>
 
                   <div className="option-item">
-                    <Link
-                      to="https://dash.onlinesaathi.org/login"
-                      target="_blank"
-                      activeClassName="active"
-                      onClick={() => setCollapsed(true)}
-                      className="default-btn"
-                    >
-                      <i className="flaticon-right"></i> login{" "}
-                      <span></span>
-                    </Link>
+                    <LoginOrProfile onNavigate={() => setCollapsed(true)} />
                   </div>
                 </div>
               </div>

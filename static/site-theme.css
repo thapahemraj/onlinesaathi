@@ -70,6 +70,14 @@ html[data-theme="dark"] .testimonials-slides :is(.swiper-button-prev,.swiper-but
 html[data-theme="dark"] .testimonials-view-btn .default-btn{background:var(--site-soft);border-color:#645181;color:var(--site-accent)}
 html[data-theme="dark"] .testimonials-view-btn .default-btn:hover{background:var(--site-primary);color:#fff;border-color:var(--site-primary)}
 
+/* Service-detail side panels use hard-coded light surfaces in the legacy CSS. */
+html[data-theme="dark"] .services-details-info :is(.services-list,.download-file,.services-contact-info){background:var(--site-surface);border:1px solid var(--site-border);box-shadow:var(--site-shadow);color:var(--site-text)}
+html[data-theme="dark"] .services-details-info :is(.services-list li a,.download-file h3,.download-file ul li a,.services-contact-info h3,.services-contact-info ul li span){color:var(--site-text)}
+html[data-theme="dark"] .services-details-info :is(.services-list li a,.download-file ul li a,.services-contact-info ul li){border-color:var(--site-border)}
+html[data-theme="dark"] .services-details-info .services-contact-info :is(ul li,ul li a){color:var(--site-muted)}
+html[data-theme="dark"] .services-details-info .services-list li a:hover,html[data-theme="dark"] .services-details-info .services-list li a.active{background:var(--site-primary);border-color:var(--site-primary);color:#fff}
+html[data-theme="dark"] .services-details-desc :is(.content ul li,.technologies-features li span){color:var(--site-muted)}
+
 /* Compact icon control; retain an accessible label and keyboard focus ring. */
 .site-theme-toggle{width:42px;height:42px;min-height:42px;padding:0;gap:0;flex-shrink:0}
 html[data-theme="dark"] #navbar.navbar-area,

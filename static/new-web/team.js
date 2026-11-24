@@ -39,14 +39,14 @@
   // theme
   const root=document.documentElement;
   try{const s=localStorage.getItem('os-theme'); if(s) root.dataset.theme=s;}catch(e){}
-  
-  
+
+
   // forms -> WhatsApp
   document.querySelectorAll('form[data-form]').forEach(f=>f.addEventListener('submit',e=>{
     e.preventDefault(); const L=['*'+f.dataset.form+'* (via website)']; new FormData(f).forEach((v,k)=>{if(String(v).trim())L.push(k+': '+v);});
     window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(L.join('\n')),'_blank','noopener'); const ok=f.querySelector('.ok'); if(ok) ok.style.display='block'; f.reset();
   }));
-  
+
 })();
 
   })();

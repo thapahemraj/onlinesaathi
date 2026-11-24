@@ -1,3 +1,5 @@
-import Page, { Head as PageHead } from "./privacy-policy"
-export default Page
-export const Head = PageHead
+import React from "react"
+import NewWebsite, { NewWebsiteHead } from "../components/NewWebsite"
+import content from "../data/new-web/privacy.json"
+export default function Page() { return <NewWebsite content={content} /> }
+export function Head() { return <NewWebsiteHead content={content} /> }

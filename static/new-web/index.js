@@ -12,7 +12,7 @@
     const addEventListener=(...args)=>{window.addEventListener(...args);listeners.push(args)};
     const IntersectionObserver=window.IntersectionObserver && class extends window.IntersectionObserver {constructor(...args){super(...args);observers.push(this)}};
     scope.disposeImportedContent=()=>{intervals.forEach(window.clearInterval);timeouts.forEach(window.clearTimeout);listeners.forEach(args=>window.removeEventListener(...args));observers.forEach(observer=>observer.disconnect())};
-    
+
 (function(){
   const WA="919099005251";
   // reveal + counters + charts
@@ -38,14 +38,14 @@
   // theme
   const root=document.documentElement;
   try{const s=localStorage.getItem('os-theme'); if(s) root.dataset.theme=s;}catch(e){}
-  
-  
+
+
   // forms -> WhatsApp
   document.querySelectorAll('form[data-form]').forEach(f=>f.addEventListener('submit',e=>{
     e.preventDefault(); const L=['*'+f.dataset.form+'* (via website)']; new FormData(f).forEach((v,k)=>{if(String(v).trim())L.push(k+': '+v);});
     window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(L.join('\n')),'_blank','noopener'); const ok=f.querySelector('.ok'); if(ok) ok.style.display='block'; f.reset();
   }));
-  
+
 })();
 
   })();

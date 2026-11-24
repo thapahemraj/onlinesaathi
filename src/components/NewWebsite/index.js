@@ -2,23 +2,22 @@ import React, { useEffect, useRef } from "react"
 import serviceStack from "./serviceStack"
 import Layout from "../_App/layout"
 import Navbar from "../_App/Navbar"
-import Footer from "../_App/Footer"
 import Seo from "../_App/seo"
-import PageBanner from "../Common/PageBanner"
-import OriginalHome from "../OriginalContent/Home"
-import OriginalAbout from "../OriginalContent/About"
-import OriginalTeam from "../OriginalContent/Team"
-import OriginalContact from "../OriginalContent/Contact"
+import homeHero from "../../data/new-web/hero.json"
 
-const originals = { "/": OriginalHome, "/about/": OriginalAbout, "/team/": OriginalTeam, "/contact/": OriginalContact }
-const labels = { "/about/": "About Us", "/workers/": "For Workers", "/saathi/": "Become a Saathi", "/business/": "For Businesses", "/team/": "Our Team", "/contact/": "Contact" }
+// Every route backed by content/web-content is rendered only from its imported
+// page content. Legacy React sections must not be added below the new design.
 
 export default function NewWebsite({ content }) {
   const host = useRef(null)
-  const OriginalContent = originals[content.route]
+  const mainContent = content.route === "/"
+    ? `<div class="hero"><div class="wrap hero-grid"><div class="hero-copy">${homeHero.copy}</div><div class="hero-map">${homeHero.map}</div></div></div>${content.mainBody}`
+    : content.mainBody
+  const pageContent = `${mainContent}${content.footer || ""}`
   useEffect(() => {
     const node = host.current
     const stopStack = content.route === "/workers/" ? serviceStack(node) : () => {}
+    if (!content.script) return stopStack
     const script = document.createElement("script")
     script.src = content.script
     script.async = false
@@ -27,10 +26,7 @@ export default function NewWebsite({ content }) {
   }, [content.script, content.route])
   return <Layout>
     <Navbar />
-    {content.route !== "/" && <PageBanner pageTitle={labels[content.route]} homePageText="Home" homePageUrl="/" activePageText={labels[content.route]} />}
-    {OriginalContent && <OriginalContent />}
-    <div className="imported-content uploaded-sections" ref={host} dangerouslySetInnerHTML={{ __html: content.mainBody }} />
-    <Footer />
+    <div className="imported-content uploaded-sections" ref={host} dangerouslySetInnerHTML={{ __html: pageContent }} />
   </Layout>
 }
 

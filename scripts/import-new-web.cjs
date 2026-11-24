@@ -13,38 +13,31 @@ const global = read('global');
 const uploadedSource = path.join(root, 'content/web-content');
 
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-const routes = {index:'/', about:'/about/', workers:'/workers/', saathi:'/saathi/', business:'/business/', team:'/team/', contact:'/contact/', terms:'/terms/', privacy:'/privacy/', refund:'/refund/'};
+const routes = {index:'/', about:'/about/', history:'/history/', workers:'/workers/', saathi:'/saathi/', business:'/business/', team:'/team/', contact:'/contact/', terms:'/terms/', privacy:'/privacy/', refund:'/refund/'};
 const aliases = {about:['about-us'], terms:['terms-condition'], privacy:['privacy-policy'], refund:['refund-policy']};
 for (const [page, route] of Object.entries(routes)) {
-  if (['terms', 'privacy', 'refund'].includes(page)) {
-    // Gatsby's page creator does not reliably detect a bare re-export as a
-    // page component. Write explicit default and Head exports for the legacy
-    // legal pages so their original content remains available at the short
-    // URLs too.
-    fs.writeFileSync(path.join(root, 'src/pages', page+'.js'), `import Page, { Head as PageHead } from "./${aliases[page][0]}"\nexport default Page\nexport const Head = PageHead\n`);
-    continue;
-  }
-  const data = read('page-' + page);
+  const uploadedFile = path.join(uploadedSource, page+'.html');
+  const dataFile = path.join(source, 'data', 'page-' + page + '.json');
+  const data = fs.existsSync(dataFile) ? read('page-' + page) : { order: [], regions: {} };
   let first = true;
   const main = (data.order || Object.keys(data.regions)).filter(id => !(data.hidden || []).includes(id)).map(id => data.regions[id] || '').join('\n');
-  let html = fs.readFileSync(path.join(source, 'templates', page + '.html'), 'utf8').replace(/\{\{region:([\w-]+)\}\}/g, (_, id) => {
-    if (id === '_footer') return '';
-    if (id.startsWith('_')) return global.regions[id] || '';
-    if (!first) return '';
-    first = false;
-    return main;
-  });
-  const uploadedFile = path.join(uploadedSource, page+'.html');
+  let html = fs.existsSync(uploadedFile)
+    ? fs.readFileSync(uploadedFile, 'utf8')
+    : fs.readFileSync(path.join(source, 'templates', page + '.html'), 'utf8').replace(/\{\{region:([\w-]+)\}\}/g, (_, id) => {
+      if (id === '_footer') return '';
+      if (id.startsWith('_')) return global.regions[id] || '';
+      if (!first) return '';
+      first = false;
+      return main;
+    });
   let seo = settings.seo[page];
   if (fs.existsSync(uploadedFile)) {
-    html = fs.readFileSync(uploadedFile, 'utf8');
     const decode = value => value.replace(/&amp;/g, '&').replace(/&quot;/g, '\"').replace(/&#039;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
     seo = {
       title: decode(html.match(/<title>([\s\S]*?)<\/title>/i)[1]),
       description: decode(html.match(/<meta name="description" content="([^"]*)"/i)[1]),
     };
-    html = html.replace(/<footer\b[\s\S]*?<\/footer>/i, '');
-    html = html.replace(/(<a\b[^>]*class="brand"[^>]*>[\s\S]*?<img\b[^>]*src=")[^"]*(")/i, '$1/new-web/logo.svg$2');
+    html = html.replace(/(<a\b[^>]*class="(?:brand|flogo)"[^>]*>[\s\S]*?<img\b[^>]*src=")[^"]*(")/i, '$1/new-web/logo.svg$2');
     html = html.replace(/href="https:\/\/play\.google\.com[^\"]*"/g, 'href="'+escape(settings.site.playstore)+'"');
   }
   const calc = settings.calc.map((r,i) => [r.key.replace(/[^a-z]/g,'' )+'_'+i,r.name,r.sub,r.per_day,r.rate,r.color]);
@@ -52,7 +45,7 @@ for (const [page, route] of Object.entries(routes)) {
   html = html.replace(/\{\{url:([\w]+)\}\}/g, (_,k) => escape(encodeURIComponent(settings.site[k] || '').replace(/%20/g,'+')));
   html = html.replace(/\{\{([\w]+)\}\}/g, (_, k) => escape(k === 'seo_title' ? settings.seo[page].title : k === 'seo_desc' ? settings.seo[page].description : k === 'ver' ? '1' : settings.site[k] ?? '{{'+k+'}}'));
   html = html.replace(/(href|src)="assets\//g, '$1="/new-web/');
-  html = html.replace(/href="(?:\.\/)?(index|about|workers|saathi|business|team|contact|terms|privacy|refund)\.(?:php|html)([?#][^"]*)?"/g, (_, id, suffix) => `href="${routes[id]}${suffix || ''}"`).replaceAll('href="./"','href="/"');
+  html = html.replace(/href="(?:\.\/)?(index|about|history|workers|saathi|business|team|contact|terms|privacy|refund)\.(?:php|html)([?#][^"]*)?"/g, (_, id, suffix) => `href="${routes[id]}${suffix || ''}"`).replaceAll('href="./"','href="/"');
   html = html.replace(/<a href="([^\"]+)" class="">/g, (all, href) => href === route ? `<a href="${href}" class="on" aria-current="page">` : all);
   if (/\{\{/.test(html)) throw new Error('Unresolved template token: ' + page);
   const scripts = [];
@@ -75,8 +68,9 @@ for (const [page, route] of Object.entries(routes)) {
     const IntersectionObserver=window.IntersectionObserver && class extends window.IntersectionObserver {constructor(...args){super(...args);observers.push(this)}};
     scope.disposeImportedContent=()=>{intervals.forEach(window.clearInterval);timeouts.forEach(window.clearTimeout);listeners.forEach(args=>window.removeEventListener(...args));observers.forEach(observer=>observer.disconnect())};
     ${js}
-  })();`;
+  })();`.replace(/[ \t]+$/gm, '');
   new vm.Script(js, {filename:page+'.js'});
+  const footer = body.match(/<footer\b[^>]*>[\s\S]*?<\/footer>/i)?.[0] || '';
   let mainBody = body.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)[1];
   if (page === 'index') {
     const fragment = parse5.parseFragment(mainBody);
@@ -91,12 +85,12 @@ for (const [page, route] of Object.entries(routes)) {
   mainBody = mainBody.replace(/<div\b[^>]*class="crumb"[^>]*>[\s\S]*?<\/div>/gi, '');
   mainBody = mainBody.replace(/<h1\b/g, '<h2').replace(/<\/h1>/g, '</h2>');
   fs.writeFileSync(path.join(root,'static/new-web',page+'.js'), js);
-  fs.writeFileSync(path.join(root,'src/data/new-web',page+'.json'), JSON.stringify({body, mainBody, ...seo, route, script:'/new-web/'+page+'.js'}, null, 2)+'\n');
+  fs.writeFileSync(path.join(root,'src/data/new-web',page+'.json'), JSON.stringify({body, mainBody, footer, ...seo, route, script:'/new-web/'+page+'.js'}, null, 2)+'\n');
   for (const slug of [page, ...(aliases[page] || [])]) {
     fs.writeFileSync(path.join(root,'src/pages',slug+'.js'), `import React from "react"\nimport NewWebsite, { NewWebsiteHead } from "../components/NewWebsite"\nimport content from "../data/new-web/${page}.json"\nexport default function Page() { return <NewWebsite content={content} /> }\nexport function Head() { return <NewWebsiteHead content={content} /> }\n`);
   }
 }
-console.log('Imported new pages; preserved the original logo, footer and legal pages.');
+console.log('Imported new pages with their supplied footer content and legal-page routes.');
 
 // Keep legacy page CSS out of the new design's global CSS bundle.
 const legacy = path.join(root, 'static/legacy-theme');

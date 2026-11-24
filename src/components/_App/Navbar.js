@@ -1,671 +1,153 @@
 import React from "react"
-import { useRecoilState } from "recoil"
-import { collapsedState } from "../../utils/recoil-atoms"
 import { Link } from "gatsby"
 import logo from "../../images/gallery/logo.svg"
-import LoginOrProfile from "./LoginOrProfile"
-import ThemeToggle from "./ThemeToggle"
-import HeaderSearch from "./HeaderSearch"
+
+const mobileLinks = [
+  ["/", "Home"],
+  ["/about/", "About"],
+  ["/history/", "— History"],
+  ["/workers/", "For Workers"],
+  ["/workers/#services", "— Services"],
+  ["/saathi/", "Become a Saathi"],
+  ["/saathi/#calculator", "— Earnings calculator"],
+  ["/business/", "Business"],
+  ["/business/#solutions", "— Solutions"],
+  ["/team/", "Team"],
+  ["/contact/", "Contact"],
+]
 
 const Navbar = () => {
-  const [collapsed, setCollapsed] = useRecoilState(collapsedState)
-  const [searchOpen, setSearchOpen] = React.useState(false)
-  const searchButton = React.useRef(null)
-  const closeSearch = () => { setSearchOpen(false); searchButton.current?.focus() }
-  React.useEffect(() => {
-    if (!searchOpen) return
-    const dismiss = event => { if (!document.getElementById("navbar")?.contains(event.target)) setSearchOpen(false) }
-    document.addEventListener("pointerdown", dismiss)
-    return () => document.removeEventListener("pointerdown", dismiss)
-  }, [searchOpen])
-
-  const toggleNavbar = () => {
-    setCollapsed(!collapsed)
-  }
+  const [mobileOpen, setMobileOpen] = React.useState(false)
+  const [theme, setTheme] = React.useState("light")
 
   React.useEffect(() => {
-    let elementId = document.getElementById("navbar")
-    const onScroll = () => {
-      if (!elementId) return
-      if (window.scrollY > 170) {
-        elementId.classList.add("is-sticky")
-      } else {
-        elementId.classList.remove("is-sticky")
-      }
+    const root = document.documentElement
+    let saved = null
+    try {
+      saved = localStorage.getItem("os-theme")
+    } catch (_) {
+      // Storage may be unavailable in privacy-restricted browsers.
     }
-    document.addEventListener("scroll", onScroll, { passive: true })
-    return () => document.removeEventListener("scroll", onScroll)
+    const value = saved === "dark" || saved === "light"
+      ? saved
+      : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+    root.dataset.theme = value
+    setTheme(value)
   }, [])
 
-  const classOne = collapsed
-    ? "collapse navbar-collapse"
-    : "collapse navbar-collapse show"
-  const classTwo = collapsed
-    ? "navbar-toggler navbar-toggler-right collapsed"
-    : "navbar-toggler navbar-toggler-right"
+  const toggleTheme = () => {
+    const next = theme === "dark" ? "light" : "dark"
+    document.documentElement.dataset.theme = next
+    try {
+      localStorage.setItem("os-theme", next)
+    } catch (_) {
+      // The selected mode is still applied for this page session.
+    }
+    setTheme(next)
+  }
+
+  const closeMobile = () => setMobileOpen(false)
+  const dropdown = (to, label, links) => (
+    <div className="dd">
+      <Link to={to} className="nav-main" activeClassName="on" onClick={closeMobile}>{label}</Link>
+      <div className="sub">
+        {links.map(([href, title]) => (
+          <Link key={href} to={href} activeClassName="on" onClick={closeMobile}>{title}</Link>
+        ))}
+      </div>
+    </div>
+  )
 
   return (
-    <>
-      <div id="navbar" className="navbar-area">
-        <div className="Rewy-nav">
-          <div className="container-fluid">
-            <nav className="navbar navbar-expand-lg navbar-light">
-              <Link
-                to="/"
-                onClick={() => setCollapsed(true)}
-                className="navbar-brand"
-              >
-                <img src={logo} alt="logo" />
-              </Link>
-
-              <button
-                onClick={toggleNavbar}
-                className={classTwo}
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="icon-bar top-bar"></span>
-                <span className="icon-bar middle-bar"></span>
-                <span className="icon-bar bottom-bar"></span>
-              </button>
-
-              <div className={classOne} id="navbarSupportedContent">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <Link
-                      to="/"
-                      activeClassName="active"
-                      onClick={() => setCollapsed(true)}
-                      className="nav-link"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  {[['/workers/', 'Workers'], ['/saathi/', 'Saathi'], ['/business/', 'Business']].map(([url, label]) => (
-                    <li className="nav-item" key={url}><Link to={url} activeClassName="active" onClick={() => setCollapsed(true)} className="nav-link">{label}</Link></li>
-                  ))}
-                  {/* <li className="nav-item">
-                    <Link
-                      to="/"
-                      onClick={e => e.preventDefault()}
-                      className="nav-link"
-                    >
-                      Home <i className="bx bx-chevron-down"></i>
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="/"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          IT Services
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/seo-agency"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          SEO Agency
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/data-science-ml-company"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Data Science ML Company
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/data-analytics-ai-startup"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Data Analytics & AI Startup
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/digital-marketing-agency"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Digital Marketing Agency
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/data-science-online-courses"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Data Science Online Courses
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/big-data-analysis-startup"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Big Data Analysis Startup
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/data-analytics-ml-consulting"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Data Analytics ML Consulting
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/machine-learning-ai-solutions"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Machine Learning AI Solutions
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
-
-                  <li className="nav-item">
-                    <Link
-                      to="/about-us"
-                      onClick={() => setCollapsed(true)}
-                      getProps={({ location }) => ({ className: /^\/(about|about-us|history|team)(\/|$)/.test(location.pathname) ? "nav-link active" : "nav-link" })}
-                      className="nav-link"
-                    >
-                      About Us <i className="bx bx-chevron-down"></i>
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="/about-us"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          About Us
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/history"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          History
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/testimonials"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Testimonials
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/team"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Team
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link
-                      to="/services"
-                      onClick={() => setCollapsed(true)}
-                      getProps={({ location }) => ({ className: /^\/services(\/|$)/.test(location.pathname) ? "nav-link active" : "nav-link" })}
-                      className="nav-link"
-                    >
-                      Services <i className="bx bx-chevron-down"></i>
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="/services"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          All Services
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/services/safe-jobs-connect"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Safe Jobs Connect
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/services/social-welfare-schemes"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Social Welfare Schemes
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/services/micro-atm-services"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Micro ATM Services
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/services/pan-card-center"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          PAN Card Center
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/services/travel-bill-payments"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Travel & Bill Payments
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/services/neo-banking-remittance"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Neo Banking & Remittance
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  {/* <li className="nav-item">
-                    <Link
-                      to="#"
-                      onClick={e => e.preventDefault()}
-                      className="nav-link"
-                    >
-                      Services <i className="bx bx-chevron-down"></i>
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="/services"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Services
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/services/service-details"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Service Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
-
-                  {/* <li className="nav-item">
-                    <Link
-                      to="#"
-                      onClick={e => e.preventDefault()}
-                      className="nav-link"
-                    >
-                      Case Studies <i className="bx bx-chevron-down"></i>
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="/case-studies"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Case Studies
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/case-studies/case-studies-details"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Case Studies Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
-
-                  {/* <li className="nav-item">
-                    <Link
-                      to="#"
-                      onClick={e => e.preventDefault()}
-                      className="nav-link"
-                    >
-                      Pages <i className="bx bx-chevron-down"></i>
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="#"
-                          onClick={e => e.preventDefault()}
-                          className="nav-link"
-                        >
-                          Courses <i className="bx bx-chevron-down"></i>
-                        </Link>
-
-                        <ul className="dropdown-menu">
-                          <li className="nav-item">
-                            <Link
-                              to="/courses"
-                              activeClassName="active"
-                              onClick={() => setCollapsed(true)}
-                              className="nav-link"
-                            >
-                              Courses
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              to="/courses/course-details"
-                              activeClassName="active"
-                              onClick={() => setCollapsed(true)}
-                              className="nav-link"
-                            >
-                              Course Details
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="#"
-                          onClick={e => e.preventDefault()}
-                          className="nav-link"
-                        >
-                          Events <i className="bx bx-chevron-down"></i>
-                        </Link>
-
-                        <ul className="dropdown-menu">
-                          <li className="nav-item">
-                            <Link
-                              to="/events"
-                              activeClassName="active"
-                              onClick={() => setCollapsed(true)}
-                              className="nav-link"
-                            >
-                              Events
-                            </Link>
-                          </li>
-
-                          <li className="nav-item">
-                            <Link
-                              to="/events/event-details"
-                              activeClassName="active"
-                              onClick={() => setCollapsed(true)}
-                              className="nav-link"
-                            >
-                              Event Details
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/contact"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Contact
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/gallery"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Gallery
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/faq"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          FAQ
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/coming-soon"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Coming Soon
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/membership-levels"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Membership Levels
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/profile-authentication"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Login/Register
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/privacy-policy"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Privacy Policy
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/terms-condition"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Terms of Service
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/404"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          404 Error Page
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
-                  {/* <li className="nav-item">
-                        <Link
-                          to="/blog"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Blog
-                        </Link>
-                      </li> */}
-
-
-                  {/* <li className="nav-item">
-                    <Link
-                      to="#"
-                      onClick={e => e.preventDefault()}
-                      className="nav-link"
-                    >
-                      Blog <i className="bx bx-chevron-down"></i>
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="/blog"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Blog
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/blog/blog-details"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Blog Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
-                  
-                  <li className="nav-item">
-                        <Link
-                          to="/contact"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Contact
-                        </Link>
-                      </li>
-
-                </ul>
-
-                
-
-                <div className="others-option d-flex align-items-center">
-                  <div className="option-item">
-                    <button ref={searchButton} type="button" className="site-search-toggle" aria-label={searchOpen ? "Close search" : "Open search"} aria-expanded={searchOpen} aria-controls="site-search-panel" onClick={() => { setSearchOpen(open => !open); setCollapsed(true) }}>
-                      <i className={`bx ${searchOpen ? "bx-x" : "bx-search"}`} aria-hidden="true" />
-                    </button>
-                  </div>
-                  <div className="option-item"><ThemeToggle /></div>
-
-                  <div className="option-item">
-                    <LoginOrProfile onNavigate={() => setCollapsed(true)} />
-                  </div>
-                </div>
-              </div>
-            </nav>
+    <div className="imported-content website-header">
+      <div className="topbar">
+        <div className="wrap">
+          <div className="l">
+            <a href="tel:+919099005251"><i className="bx bx-phone" aria-hidden="true" /> +91 90990 05251</a>
+            <a href="mailto:support@onlinesaathi.org"><i className="bx bx-envelope" aria-hidden="true" /> support@onlinesaathi.org</a>
+            <span className="hide"><i className="bx bx-map" aria-hidden="true" /> Naroda, Ahmedabad</span>
+          </div>
+          <div className="r">
+            <a href="https://www.youtube.com/@onlinesaathi" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://www.linkedin.com/company/online-saathi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.whatsapp.com/channel/0029VaVLYnq6LwHfwUg2SK2c" target="_blank" rel="noopener noreferrer">WhatsApp Channel</a>
           </div>
         </div>
-        {searchOpen && <HeaderSearch onClose={closeSearch} />}
       </div>
-    </>
+
+      <header>
+        <div className="wrap nav">
+          <Link to="/" className="brand" aria-label="Online Saathi home" onClick={closeMobile}>
+            <img src={logo} alt="Online Saathi — आपका अपना साथी" />
+          </Link>
+
+          <nav className="menu" aria-label="Main navigation">
+            <Link to="/" activeClassName="on" onClick={closeMobile}>Home</Link>
+            {dropdown("/about/", "About", [
+              ["/about/#overview", "Overview"],
+              ["/history/", "History"],
+              ["/about/#vision-mission", "Vision & Mission"],
+              ["/about/#roadmap", "Roadmap 2021–2031"],
+            ])}
+            {dropdown("/workers/", "For Workers", [
+              ["/workers/#overview", "Overview"],
+              ["/workers/#services", "Services"],
+              ["/workers/#how-to-get", "How to get help"],
+              ["/workers/#benefits", "Benefits & scheme finder"],
+            ])}
+            {dropdown("/saathi/", "Become a Saathi", [
+              ["/saathi/#benefits", "Saathi benefits"],
+              ["/saathi/#calculator", "Earnings calculator"],
+              ["/saathi/#stories", "Saathi stories"],
+              ["/saathi/#apply", "Apply now"],
+            ])}
+            {dropdown("/business/", "Business", [
+              ["/business/#how-we-help", "How we help"],
+              ["/business/#solutions", "Solutions"],
+              ["/business/#partners", "Partners & incubators"],
+            ])}
+            {dropdown("/team/", "Team", [
+              ["/team/#directors", "Directors"],
+              ["/team/#advisors", "Mentors & advisors"],
+              ["/team/#our-team", "Our team"],
+              ["/team/#careers", "Careers"],
+            ])}
+            <Link to="/contact/" activeClassName="on" onClick={closeMobile}>Contact</Link>
+          </nav>
+
+          <div className="cta">
+            <button
+              id="theme"
+              type="button"
+              className="iconbtn"
+              onClick={toggleTheme}
+              aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+              title="Toggle colour mode"
+            >
+              <i className={`bx ${theme === "dark" ? "bx-sun" : "bx-moon"}`} aria-hidden="true" />
+            </button>
+            <a className="btn btn-ghost" href="https://dash.onlinesaathi.org/login" target="_blank" rel="noopener noreferrer"><i className="bx bx-log-in" aria-hidden="true" /> Login</a>
+            <a className="btn btn-blue" href="https://play.google.com/store/search?q=online+saathi+app&c=apps&hl=en" target="_blank" rel="noopener noreferrer"><i className="bx bx-download" aria-hidden="true" /> Get the App</a>
+            <button
+              type="button"
+              className="iconbtn burger"
+              onClick={() => setMobileOpen(value => !value)}
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+            >
+              <i className={`bx ${mobileOpen ? "bx-x" : "bx-menu"}`} aria-hidden="true" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <nav className={`mobile ${mobileOpen ? "open" : ""}`} aria-label="Mobile navigation">
+        {mobileLinks.map(([href, label]) => (
+          <Link key={href} to={href} activeClassName="on" onClick={closeMobile}>{label}</Link>
+        ))}
+        <a href="https://dash.onlinesaathi.org/login" target="_blank" rel="noopener noreferrer" onClick={closeMobile}>Login</a>
+      </nav>
+    </div>
   )
 }
 

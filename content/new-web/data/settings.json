@@ -1,0 +1,124 @@
+{
+  "site": {
+    "company": "Shubhlaxmi Multiservices India Pvt. Ltd.",
+    "phone_display": "+91 90990 05251",
+    "phone_tel": "+919099005251",
+    "whatsapp": "919099005251",
+    "phone2_display": "+91 84888 56251",
+    "phone2_tel": "+918488856251",
+    "email_support": "support@onlinesaathi.org",
+    "email_ceo": "ceo@onlinesaathi.org",
+    "email_admin": "admin@onlinesaathi.org",
+    "address_office": "The Antelia Business Hub, 405, Sardar Patel Ring Rd, Naroda, Ahmedabad, Gujarat 382330",
+    "address_registered": "29-421, Bhadreshwar Housing Society, Behind Hajipur Dargah, Kotarpur, Ahmedabad, Gujarat 382475",
+    "address_short": "Naroda, Ahmedabad",
+    "map_query": "The Antelia Business Hub Naroda Ahmedabad",
+    "youtube": "https://www.youtube.com/@onlinesaathi",
+    "linkedin": "https://www.linkedin.com/company/online-saathi/",
+    "wa_channel": "https://www.whatsapp.com/channel/0029VaVLYnq6LwHfwUg2SK2c",
+    "playstore": "https://play.google.com/store/apps/details?id=com.recharge.online_saathi&hl=en",
+    "login_url": "https://dash.onlinesaathi.org/login",
+    "logo": "/new-web/logo.svg",
+    "favicon": "/favicon.ico"
+  },
+  "seo": {
+    "index": {
+      "title": "Online Saathi — Aapka Apna Saathi | Last-mile access for India's informal workforce",
+      "description": "Online Saathi connects India's informal and migrant workers to welfare schemes, jobs, banking, remittance and essential services through 2000+ trained local Saathis."
+    },
+    "about": {
+      "title": "About Online Saathi — Who we are",
+      "description": "Who Online Saathi is — our story, how we work and the family behind the platform."
+    },
+    "workers": {
+      "title": "For Workers — Online Saathi",
+      "description": "How Online Saathi helps informal and migrant workers — services, how to get help and benefits."
+    },
+    "saathi": {
+      "title": "Become a Saathi — Benefits | Online Saathi",
+      "description": "Become an Online Saathi — benefits, how Saathis earn, specialisations and the Saathi kit."
+    },
+    "business": {
+      "title": "For Businesses — How Online Saathi Helps",
+      "description": "How Online Saathi helps businesses reach informal workers and hire local talent."
+    },
+    "team": {
+      "title": "Our Team — Online Saathi",
+      "description": "Meet the Online Saathi team — directors, advisors and staff."
+    },
+    "contact": {
+      "title": "Contact — Online Saathi",
+      "description": "Contact Online Saathi — helpline, WhatsApp, email, office addresses and map."
+    },
+    "terms": {
+      "title": "Terms & Conditions — Online Saathi",
+      "description": "Online Saathi Terms & Conditions."
+    },
+    "privacy": {
+      "title": "Privacy Policy — Online Saathi",
+      "description": "Online Saathi Privacy Policy."
+    },
+    "refund": {
+      "title": "Refund Policy — Online Saathi",
+      "description": "Online Saathi Refund Policy."
+    }
+  },
+  "calc": [
+    {
+      "key": "aeps",
+      "name": "Cash withdrawal (AEPS)",
+      "sub": "Micro ATM",
+      "per_day": 4,
+      "rate": 5,
+      "color": "#0050C6"
+    },
+    {
+      "key": "remit",
+      "name": "Money transfer & remittance",
+      "sub": "Domestic & Indo-Nepal",
+      "per_day": 1,
+      "rate": 15,
+      "color": "#038A01"
+    },
+    {
+      "key": "bills",
+      "name": "Bills & recharges",
+      "sub": "Electricity, mobile, DTH",
+      "per_day": 4,
+      "rate": 2,
+      "color": "#E3141B"
+    },
+    {
+      "key": "travel",
+      "name": "Travel bookings",
+      "sub": "Bus & train tickets",
+      "per_day": 0,
+      "rate": 20,
+      "color": "#E8A722"
+    },
+    {
+      "key": "pan",
+      "name": "PAN applications",
+      "sub": "New & corrections",
+      "per_day": 0,
+      "rate": 30,
+      "color": "#0A1F44"
+    },
+    {
+      "key": "scheme",
+      "name": "Scheme & insurance help",
+      "sub": "Applications & enrolment",
+      "per_day": 1,
+      "rate": 20,
+      "color": "#2A6FD6"
+    },
+    {
+      "key": "jobs",
+      "name": "Job referrals",
+      "sub": "Safe Jobs Connect",
+      "per_day": 0,
+      "rate": 50,
+      "color": "#4CB84A"
+    }
+  ]
+}

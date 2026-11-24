@@ -67,7 +67,7 @@ const Footer = () => {
               </ul>
 
               <a
-                href="https://play.google.com/store/search?q=online+saathi+app&c=apps&hl=en"
+                href="https://play.google.com/store/apps/details?id=com.recharge.online_saathi&hl=en"
                 className="play-store-link"
                 target="_blank"
                 rel="noreferrer"

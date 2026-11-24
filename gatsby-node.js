@@ -33,3 +33,8 @@ exports.createPages = async ({ actions }) => {
     })
   })
 }
+
+// Runs for both development and production builds.
+exports.onPreBootstrap = () => {
+  require('./scripts/import-new-web.cjs')
+}

@@ -4,9 +4,20 @@ import { collapsedState } from "../../utils/recoil-atoms"
 import { Link } from "gatsby"
 import logo from "../../images/gallery/logo.svg"
 import LoginOrProfile from "./LoginOrProfile"
+import ThemeToggle from "./ThemeToggle"
+import HeaderSearch from "./HeaderSearch"
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useRecoilState(collapsedState)
+  const [searchOpen, setSearchOpen] = React.useState(false)
+  const searchButton = React.useRef(null)
+  const closeSearch = () => { setSearchOpen(false); searchButton.current?.focus() }
+  React.useEffect(() => {
+    if (!searchOpen) return
+    const dismiss = event => { if (!document.getElementById("navbar")?.contains(event.target)) setSearchOpen(false) }
+    document.addEventListener("pointerdown", dismiss)
+    return () => document.removeEventListener("pointerdown", dismiss)
+  }, [searchOpen])
 
   const toggleNavbar = () => {
     setCollapsed(!collapsed)
@@ -14,14 +25,17 @@ const Navbar = () => {
 
   React.useEffect(() => {
     let elementId = document.getElementById("navbar")
-    document.addEventListener("scroll", () => {
+    const onScroll = () => {
+      if (!elementId) return
       if (window.scrollY > 170) {
         elementId.classList.add("is-sticky")
       } else {
         elementId.classList.remove("is-sticky")
       }
-    })
-  })
+    }
+    document.addEventListener("scroll", onScroll, { passive: true })
+    return () => document.removeEventListener("scroll", onScroll)
+  }, [])
 
   const classOne = collapsed
     ? "collapse navbar-collapse"
@@ -71,6 +85,9 @@ const Navbar = () => {
                       Home
                     </Link>
                   </li>
+                  {[['/workers/', 'Workers'], ['/saathi/', 'Saathi'], ['/business/', 'Business']].map(([url, label]) => (
+                    <li className="nav-item" key={url}><Link to={url} activeClassName="active" onClick={() => setCollapsed(true)} className="nav-link">{label}</Link></li>
+                  ))}
                   {/* <li className="nav-item">
                     <Link
                       to="/"
@@ -184,8 +201,9 @@ const Navbar = () => {
 
                   <li className="nav-item">
                     <Link
-                      to="#"
-                      onClick={e => e.preventDefault()}
+                      to="/about-us"
+                      onClick={() => setCollapsed(true)}
+                      getProps={({ location }) => ({ className: /^\/(about|about-us|history|team)(\/|$)/.test(location.pathname) ? "nav-link active" : "nav-link" })}
                       className="nav-link"
                     >
                       About Us <i className="bx bx-chevron-down"></i>
@@ -240,8 +258,9 @@ const Navbar = () => {
 
                   <li className="nav-item">
                     <Link
-                      to="#"
-                      onClick={e => e.preventDefault()}
+                      to="/services"
+                      onClick={() => setCollapsed(true)}
+                      getProps={({ location }) => ({ className: /^\/services(\/|$)/.test(location.pathname) ? "nav-link active" : "nav-link" })}
                       className="nav-link"
                     >
                       Services <i className="bx bx-chevron-down"></i>
@@ -630,17 +649,11 @@ const Navbar = () => {
 
                 <div className="others-option d-flex align-items-center">
                   <div className="option-item">
-                    <form className="search-box">
-                      <input
-                        type="text"
-                        className="input-search"
-                        placeholder="Search for anything"
-                      />
-                      <button type="submit">
-                        <i className="flaticon-loupe"></i>
-                      </button>
-                    </form>
+                    <button ref={searchButton} type="button" className="site-search-toggle" aria-label={searchOpen ? "Close search" : "Open search"} aria-expanded={searchOpen} aria-controls="site-search-panel" onClick={() => { setSearchOpen(open => !open); setCollapsed(true) }}>
+                      <i className={`bx ${searchOpen ? "bx-x" : "bx-search"}`} aria-hidden="true" />
+                    </button>
                   </div>
+                  <div className="option-item"><ThemeToggle /></div>
 
                   <div className="option-item">
                     <LoginOrProfile onNavigate={() => setCollapsed(true)} />
@@ -650,6 +663,7 @@ const Navbar = () => {
             </nav>
           </div>
         </div>
+        {searchOpen && <HeaderSearch onClose={closeSearch} />}
       </div>
     </>
   )

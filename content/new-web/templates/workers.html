@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!document.querySelector(".reveal.in")){document.documentElement.classList.remove("js")}},2500)</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{seo_title}}</title>
+<meta name="description" content="{{seo_desc}}">
+<meta property="og:title" content="{{seo_title}}">
+<meta property="og:description" content="{{seo_desc}}">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A1F44">
+<link rel="icon" href="{{favicon}}">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v={{ver}}">
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <div class="l"><a href="tel:{{phone_tel}}"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> {{phone_display}}</a><a href="mailto:{{email_support}}"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg> {{email_support}}</a><span class="hide"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> {{address_short}}</span></div>
+  <div class="r"><a href="{{youtube}}" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg> YouTube</a><a href="{{linkedin}}" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</a><a href="{{wa_channel}}" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg> WhatsApp Channel</a></div>
+</div></div>
+<header>
+  <div class="wrap nav">
+    <a href="./" class="brand" aria-label="Online Saathi home"><img src="{{logo}}" alt="Online Saathi — आपका अपना साथी"></a>
+    {{region:_menu}}
+    <div class="cta">
+      <button class="iconbtn" id="theme" aria-label="Toggle dark mode"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+      <a class="btn btn-ghost" href="{{login_url}}" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" x2="3" y1="12" y2="12"></line></svg> Login</a>
+      <a class="btn btn-blue" href="{{playstore}}" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg> Get the App</a>
+      <button class="iconbtn burger" id="burger" aria-label="Open menu"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button>
+    </div>
+  </div>
+</header>
+{{region:_mobile}}
+<main id="main">
+{{region:workers-01}}
+{{region:workers-02}}
+{{region:workers-03}}
+{{region:workers-04}}
+{{region:workers-05}}
+{{region:workers-06}}
+{{region:workers-07}}
+{{region:workers-08}}
+{{region:workers-09}}
+{{region:workers-10}}
+{{region:workers-11}}
+{{region:workers-12}}
+{{region:workers-13}}
+{{region:workers-14}}
+{{region:workers-15}}
+{{region:workers-16}}
+<script>
+(function(){
+  const WA={{json:whatsapp}};
+  const S={eshram:['e-Shram registration','National database ID for unorganised workers (age 16–59) — the gateway to many welfare benefits.','c-blue','id'],
+    pmsby:['PM Suraksha Bima Yojana','Low-cost accident insurance for bank account holders aged 18–70.','c-green','shield'],
+    pmjjby:['PM Jeevan Jyoti Bima Yojana','Affordable life insurance for bank account holders aged 18–50.','c-green','shield'],
+    sym:['PM Shram Yogi Maandhan','Voluntary pension scheme for unorganised workers who join between 18 and 40.','c-amber','pension'],
+    apy:['Atal Pension Yojana','Guaranteed pension from age 60 for those who join between 18 and 40.','c-amber','pension'],
+    bocw:['Construction Workers Welfare Board','State BOCW board registration for education, health, maternity and accident benefits.','c-red','hammer'],
+    onorc:['One Nation One Ration Card','Collect your ration from any fair price shop in India, wherever you work.','c-blue','cart'],
+    svanidhi:['PM SVANidhi','Working-capital loans for street vendors, with interest subsidy on timely repayment.','c-green','wallet'],
+    pmjay:['Ayushman Bharat PM-JAY','Health cover for eligible families — check your eligibility with your Saathi.','c-red','heart'],
+    remit:['Safe remittance home','Send money to your family securely through Online Saathi partners.','c-blue','send']};
+  const IC={"sparkles":"<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"i\" aria-hidden=\"true\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg>","id":"<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"i\" aria-hidden=\"true\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16 10h2\"></path><path d=\"M16 14h2\"></path><path d=\"M6.17 15a3 3 0 0 1 5.66 0\"></path><circle cx=\"9\" cy=\"11\" r=\"2\"></circle><rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"></rect></svg>","shield":"<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"i\" aria-hidden=\"true\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"></path><path d=\"m9 12 2 2 4-4\"></path></svg>","pension":"<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"i\" aria-hidden=\"true\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2V5z\"></path><path d=\"M2 9v1c0 1.1.9 2 2 2h1\"></path><path d=\"M16 11h.01\"></path></svg>","hammer":"<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"i\" aria-hidden=\"true\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9\"></path><path d=\"m18 15 4-4\"></path><path d=\"m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5\"></path></svg>","cart":"<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"i\" aria-hidden=\"true\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"8\" cy=\"21\" r=\"1\"></circle><circle cx=\"19\" cy=\"21\" r=\"1\"></circle><path d=\"M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12\"></path></svg>","wallet":"<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"i\" aria-hidden=\"true\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1\"></path><path d=\"M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4\"></path></svg>","heart":"<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"i\" aria-hidden=\"true\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"></path><path d=\"M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27\"></path></svg>","send":"<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"i\" aria-hidden=\"true\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z\"></path><path d=\"m21.854 2.147-10.94 10.939\"></path></svg>"}; const ans={};
+  document.querySelectorAll('.opts').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('.opt');if(!b)return;g.querySelectorAll('.opt').forEach(x=>x.classList.toggle('on',x===b));ans[g.dataset.q]=b.dataset.v;render();}));
+  function render(){const out=document.getElementById('results');
+    if(!ans.work||!ans.age||!ans.mig){out.innerHTML='<div class="empty">'+IC.sparkles+'<br>Answer all three questions to see suggested schemes.</div>';return;}
+    const a=ans.age,l=[]; if(a!=='60+'){l.push('eshram','pmsby');} if(a==='18-40'||a==='41-50')l.push('pmjjby'); if(a==='18-40')l.push('sym','apy');
+    if(ans.work==='construction')l.push('bocw'); if(ans.work==='vendor')l.push('svanidhi'); if(ans.mig==='yes')l.push('onorc','remit'); l.push('pmjay');
+    out.innerHTML='<p style="font-weight:700">'+l.length+' schemes and services you may be able to use:</p>'+l.map(k=>{const s=S[k];return '<div class="res"><div class="chip '+s[2]+'">'+IC[s[3]]+'</div><div><b>'+s[0]+'</b><p>'+s[1]+'</p></div></div>';}).join('')+'<a class="btn btn-green" style="margin-top:6px" target="_blank" rel="noopener" href="https://wa.me/'+WA+'?text='+encodeURIComponent('Namaste! Please help me apply for: '+l.map(k=>S[k][0]).join(', '))+'">'+IC.send+' Get help applying</a>';}
+})();
+</script>
+</main>
+{{region:_footer}}
+<a class="wa" href="https://wa.me/{{whatsapp}}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="i" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></a>
+<script>
+(function(){
+  const WA={{json:whatsapp}};
+  // reveal + counters + charts
+  const fire=el=>{
+    el.classList.add('in');
+    el.querySelectorAll('[data-count]').forEach(c=>{ if(c.dataset.done)return; c.dataset.done=1; const t=+c.dataset.count,pre=c.dataset.pre||'',suf=c.dataset.suf||'',t0=performance.now();
+      (function f(n){const p=Math.min(1,(n-t0)/1500),v=Math.round(t*(1-Math.pow(1-p,3)));c.textContent=pre+v.toLocaleString('en-IN')+suf;if(p<1)requestAnimationFrame(f);})(t0); });
+    el.querySelectorAll('[data-dash]').forEach(c=>c.style.strokeDasharray=c.dataset.dash);
+  };
+  document.querySelectorAll('[data-dash]').forEach(c=>c.style.strokeDasharray='0 999');
+  const els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){fire(e.target);io.unobserve(e.target);}}),{threshold:.12}); els.forEach(e=>io.observe(e)); }
+  else els.forEach(fire);
+  // safety net: if animations don't start (some previewers), show everything
+  setTimeout(()=>{ if(!document.querySelector('.reveal.in')) els.forEach(fire); },1200);
+  // sub-nav scrollspy
+  const sn=document.getElementById('subnav');
+  if(sn){ const links=[...sn.querySelectorAll('a')], tg=links.map(a=>document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+    const spy=()=>{ let k=0; tg.forEach((t,i)=>{ if(t.getBoundingClientRect().top<200) k=i; }); links.forEach((a,i)=>a.classList.toggle('on',i===k)); const on=links[k]; if(on) sn.firstElementChild.scrollTo({left:on.offsetLeft-20,behavior:'smooth'}); };
+    addEventListener('scroll',()=>requestAnimationFrame(spy),{passive:true}); spy(); }
+  // rotating words
+  document.querySelectorAll('.rot[data-words]').forEach(r=>{ const w=r.dataset.words.split('|'); let i=0; setInterval(()=>{i=(i+1)%w.length; r.innerHTML='<span>'+w[i]+'</span>';},2200); });
+  // theme
+  const root=document.documentElement;
+  try{const s=localStorage.getItem('os-theme'); if(s) root.dataset.theme=s;}catch(e){}
+  document.getElementById('theme').onclick=()=>{const d=root.dataset.theme? root.dataset.theme==='dark' : matchMedia('(prefers-color-scheme: dark)').matches; root.dataset.theme=d?'light':'dark'; try{localStorage.setItem('os-theme',root.dataset.theme);}catch(e){}};
+  document.getElementById('burger').onclick=()=>document.getElementById('mobile').classList.toggle('open');
+  // forms -> WhatsApp
+  document.querySelectorAll('form[data-form]').forEach(f=>f.addEventListener('submit',e=>{
+    e.preventDefault(); try{const fd=new FormData(f);fd.append('_form',f.dataset.form);fd.append('_page',location.pathname);if(!(navigator.sendBeacon&&navigator.sendBeacon('api.php?a=lead',fd)))fetch('api.php?a=lead',{method:'POST',body:fd});}catch(_){} const L=['*'+f.dataset.form+'* (via website)']; new FormData(f).forEach((v,k)=>{if(String(v).trim())L.push(k+': '+v);});
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(L.join('\n')),'_blank','noopener'); const ok=f.querySelector('.ok'); if(ok) ok.style.display='block'; f.reset();
+  }));
+  
+})();
+</script>
+</body>
+</html>

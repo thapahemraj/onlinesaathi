@@ -12,11 +12,14 @@ import "./src/styles/css/boxicons.min.css"
 import "./src/styles/css/flaticon.css"
 import 'react-accessible-accordion/dist/fancy-example.css'
 import 'react-18-image-lightbox/style.css';
-import "/node_modules/aos/dist/aos.css";
+import "aos/dist/aos.css";
 import "swiper/css"
 import "swiper/css/bundle"
 
 // Global style
-import "./src/styles/css/style.css" 
-import "./src/styles/css/responsive.css" 
- 
+import "./src/styles/css/style.css"
+import "./src/styles/css/responsive.css"
+
+import "./static/site-theme.css"
+import "./static/new-web/site.css"
+import "./static/imported-content.css"

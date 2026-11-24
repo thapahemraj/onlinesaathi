@@ -1,0 +1,113 @@
+:root{color-scheme:light;--site-bg:#fff;--site-surface:#f8faff;--site-text:#221638;--site-muted:#6b6b84;--site-border:#ececf0}
+html[data-theme="dark"]{color-scheme:dark;--site-bg:#10131e;--site-surface:#1b2030;--site-text:#f1eff8;--site-muted:#b4b1c7;--site-border:#32394b}
+.site-theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--site-border);border-radius:5px;background:var(--site-bg);color:var(--site-text);padding:9px 12px;min-height:40px;font:700 14px "Nunito",sans-serif;cursor:pointer;white-space:nowrap}
+.site-theme-toggle i{font-size:20px}.site-theme-toggle:focus-visible{outline:2px solid #825fff!important;outline-offset:3px}
+html[data-theme="dark"] body{background:var(--site-bg);color:var(--site-text)}
+html[data-theme="dark"] :is(h1,h2,h3,h4,h5,h6){color:var(--site-text)}
+html[data-theme="dark"] :is(p,li,blockquote,label){color:var(--site-muted)}
+html[data-theme="dark"] :is(.navbar-area,.Rewy-nav,.navbar-area.is-sticky,.Rewy-nav .navbar .navbar-nav .nav-item .dropdown-menu,.footer-area.bg-color,.page-title-area,.it-services-banner,.contact-area,.privacy-policy-area,.terms-of-service-area,.services-area,.about-area,.solutions-area,.team-area,.scientist-area,.testimonials-area,.partner-area,.blog-area,.pricing-area,.history-area,.features-area,.how-it-works-area,.project-start-area){background-color:var(--site-bg);background-image:none}
+html[data-theme="dark"] :is(.bg-fafafb,.bg-f1f8fb,.bg-f4f7fe,.bg-fefcf8,.bg-f8faff,.bg-fff5ee,.bg-fafafa,.bg-color,.bg-white,.single-services-box,.single-solutions-box,.single-features-box,.single-scientist-box,.single-team-box,.single-testimonials-item,.single-testimonials-box,.single-pricing-box,.single-blog-post,.single-blog-post .post-content,.single-blog-post-item,.contact-info-box,.contact-info-box .back-icon,.accordion__button,.accordion__panel,.accordion__item,.card,.modal-content){background-color:var(--site-surface)!important;color:var(--site-text)}
+html[data-theme="dark"] .Rewy-nav .navbar .navbar-nav .nav-item :is(a,.dropdown-menu li a){color:var(--site-text)}
+html[data-theme="dark"] .Rewy-nav .navbar .navbar-nav .nav-item a:hover,html[data-theme="dark"] .Rewy-nav .navbar .navbar-nav .nav-item a.active{color:#b69eff}
+html[data-theme="dark"] .navbar-light .navbar-toggler .icon-bar{background:var(--site-text)}
+html[data-theme="dark"] :is(.form-control,input,select,textarea,.input-search){background-color:#151b29!important;color:var(--site-text)!important;border-color:var(--site-border)!important}
+html[data-theme="dark"] :is(input,textarea)::placeholder{color:#aaa6bc}
+html[data-theme="dark"] :is(.single-footer-widget .footer-links-list li a,.single-footer-widget .footer-contact-info li a,.footer-bottom-area ul li a,.footer-bottom-area p,.footer-bottom-area p strong){color:var(--site-muted)}
+html[data-theme="dark"] :is(.footer-bottom-area,.table td,.table th,blockquote,.accordion__item){border-color:var(--site-border)}
+html[data-theme="dark"] .footer-map{opacity:.12}
+html[data-theme="dark"] :is(.page-title-area .shape-img1,.page-title-area .shape-img2,.page-title-area .shape-img3){opacity:.12}
+html[data-theme="dark"] :is(.single-services-box h3 a,.single-solutions-box h3 a,.single-blog-post h3 a,.single-features-box h3 a,.single-scientist-box h3 a,.page-title-content ul li a){color:var(--site-text)}
+html[data-theme="dark"] :is(.table,.table p,.table li){color:var(--site-text)}
+@media(min-width:992px){.Rewy-nav .navbar .navbar-nav .nav-item{margin-left:10px;margin-right:10px}.Rewy-nav .navbar .others-option .search-box{max-width:155px}}
+@media(max-width:991px){.site-theme-toggle{margin:8px 0}.Rewy-nav .navbar .others-option{flex-wrap:wrap;gap:8px}}
+html[data-theme="dark"] .navbar-toggler{background:#1b2030!important;border:1px solid #32394b!important}
+html[data-theme="dark"] .navbar-toggler .icon-bar{background:#f1eff8!important}
+/* Shared palette for the original site and imported content. */
+:root{--site-primary:#5222ff;--site-primary-hover:#3f14df;--site-accent:#5222ff;--site-soft:#f5f2ff;--site-on-primary:#fff;--site-radius:5px;--site-shadow:0 5px 25px rgba(34,22,56,.06)}
+html[data-theme="dark"]{--site-primary:#6940ff;--site-primary-hover:#7b56ff;--site-accent:#b69eff;--site-soft:#26213b;--site-shadow:0 5px 25px rgba(0,0,0,.18)}
+.default-btn{background-color:var(--site-primary);color:var(--site-on-primary)}
+.default-btn:hover{color:var(--site-on-primary)}
+.site-theme-toggle:hover{border-color:var(--site-accent);color:var(--site-accent)}
+html[data-theme="dark"] :is([class*="bg-f"],.single-work-process,.single-pricing-table,.single-testimonials-box .client-info,.single-feedback-item,.single-history-box,.single-funfacts-box,.job-card){background-color:var(--site-surface)}
+html[data-theme="dark"] :is(.single-solutions-box,.single-services-box,.single-features-box,.single-pricing-box,.single-blog-post) :is(p,li,small){color:var(--site-muted)}
+html[data-theme="dark"] :is(.single-solutions-box,.single-services-box,.single-features-box,.single-pricing-box,.single-blog-post) a:not(.default-btn){color:var(--site-text)}
+/* Original list tiles and secondary cards require their own dark surfaces. */
+html[data-theme="dark"] :is(.about-content .content .about-list li,.our-mission-content .content .our-mission-list li,.about-content .content .features-list li){background:var(--site-surface);color:var(--site-text);border:1px solid var(--site-border);box-shadow:var(--site-shadow)}
+html[data-theme="dark"] :is(.about-content .content .about-list li i,.our-mission-content .content .our-mission-list li i,.about-text .features-list li i,.our-mission-content .content .features-list li i){background:var(--site-soft);color:var(--site-accent)}
+html[data-theme="dark"] :is(.about-content .content .about-list li:hover i,.our-mission-content .content .our-mission-list li:hover i){background:var(--site-primary);color:#fff}
+html[data-theme="dark"] :is(.single-services-item-box,.single-projects-box,.timeline-content,.count-box,.single-process-box,.team-search-form,.single-scientist-item .content,.single-team-item .content,.single-team-box .content,.single-scientist-box .content,.single-scientist-item-box .content){background-color:var(--site-surface);border-color:var(--site-border);color:var(--site-text)}
+html[data-theme="dark"] :is(.single-services-item-box,.single-projects-box,.timeline-content,.count-box,.single-process-box,.single-scientist-item,.single-team-item) :is(h3,h4,b,strong,a){color:var(--site-text)}
+html[data-theme="dark"] :is(.single-services-item-box,.single-projects-box,.timeline-content,.count-box,.single-process-box) :is(p,small,li){color:var(--site-muted)}
+html[data-theme="dark"] :is(.section-title,.about-content .content,.our-mission-content .content,.services-content) .sub-title{color:var(--site-accent)}
+html[data-theme="dark"] .select-btn{background:var(--site-soft);color:var(--site-accent);border-color:var(--site-border)}
+html[data-theme="dark"] .how-its-work-content .inner-box .single-item .count-box{background:var(--site-soft);color:var(--site-accent)}
+html[data-theme="dark"] .membership-levels-table .table tbody tr td .select-btn{background:var(--site-soft);color:var(--site-accent)}
+/* Sticky header has a white !important background in the original theme. */
+html[data-theme="dark"] #navbar.navbar-area,
+html[data-theme="dark"] #navbar.navbar-area.is-sticky{background-color:var(--site-bg)!important;border-color:var(--site-border);box-shadow:none}
+html[data-theme="dark"] #navbar .Rewy-nav{background-color:var(--site-bg)}
+/* Active and hovered menu labels must outrank the legacy navigation selectors. */
+html[data-theme="dark"] #navbar .navbar-nav .nav-item > a.active,
+html[data-theme="dark"] #navbar .navbar-nav .nav-item > a[aria-current="page"],
+html[data-theme="dark"] #navbar .navbar-nav .nav-item > a:hover,
+html[data-theme="dark"] #navbar .navbar-nav .nav-item > a:focus-visible{color:var(--site-accent)}
+html[data-theme="dark"] #navbar .navbar-nav .dropdown-menu{background:var(--site-surface);border-color:var(--site-accent)}
+html[data-theme="dark"] #navbar .search-box button{color:var(--site-accent)}
+/* Bootstrap assigns table colours to cells, independently of the table colour. */
+html[data-theme="dark"] .table{--bs-table-color:var(--site-text);--bs-table-bg:var(--site-bg);--bs-table-border-color:var(--site-border);--bs-table-striped-color:var(--site-text);--bs-table-striped-bg:var(--site-surface);--bs-table-active-color:var(--site-text);--bs-table-active-bg:var(--site-soft);--bs-table-hover-color:var(--site-text);--bs-table-hover-bg:var(--site-surface)}
+html[data-theme="dark"] .membership-levels-table .table tbody tr td{color:var(--site-text);border-color:var(--site-border)}
+html[data-theme="dark"] .membership-levels-table .table tbody tr td a:not(.select-btn){color:var(--site-accent)}
+html[data-theme="dark"] .membership-levels-table .table tbody tr td a:hover{color:#ded0ff}
+html[data-theme="dark"] .membership-levels-table .table thead th{background:var(--site-primary);border-color:#8b6aff;color:#fff}
+/* Testimonial cards paint their visible surface with a pseudo-element. */
+html[data-theme="dark"] .single-testimonials-item::before{background-color:var(--site-surface);border:1px solid var(--site-border)}
+html[data-theme="dark"] :is(.single-testimonials-item,.single-testimonials-box) p{color:var(--site-text)}
+html[data-theme="dark"] :is(.single-testimonials-item,.single-testimonials-box) .client-info h3{color:var(--site-text)}
+html[data-theme="dark"] :is(.single-testimonials-item,.single-testimonials-box) .client-info span{color:var(--site-muted)}
+html[data-theme="dark"] :is(.single-testimonials-item,.single-testimonials-box)::after{color:var(--site-accent);opacity:.16}
+html[data-theme="dark"] .testimonials-slides :is(.swiper-button-prev,.swiper-button-next){background:var(--site-surface);color:var(--site-accent);border-color:var(--site-border)}
+html[data-theme="dark"] .testimonials-slides :is(.swiper-button-prev,.swiper-button-next):hover{background:var(--site-primary);border-color:var(--site-primary);color:#fff}
+html[data-theme="dark"] .testimonials-view-btn .default-btn{background:var(--site-soft);border-color:#645181;color:var(--site-accent)}
+html[data-theme="dark"] .testimonials-view-btn .default-btn:hover{background:var(--site-primary);color:#fff;border-color:var(--site-primary)}
+
+/* Compact icon control; retain an accessible label and keyboard focus ring. */
+.site-theme-toggle{width:42px;height:42px;min-height:42px;padding:0;gap:0;flex-shrink:0}
+html[data-theme="dark"] #navbar.navbar-area,
+html[data-theme="dark"] #navbar.navbar-area.is-sticky,
+html[data-theme="dark"] #navbar .Rewy-nav{border:0!important;box-shadow:none!important}
+html[data-theme="dark"] .page-title-area{border-bottom:0;box-shadow:none}
+/* Equal four-row columns for the eight support points, regardless of text wrap. */
+.about-content .content .about-list,
+.our-mission-content .content .our-mission-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:25px 0 0;padding:0 0 7px;overflow:visible}
+.about-content .content .about-list li,
+.our-mission-content .content .our-mission-list li{float:none;width:auto;margin:0;height:100%;min-width:0}
+@media(max-width:575px){.about-content .content .about-list,.our-mission-content .content .our-mission-list{grid-template-columns:1fr}}
+/* Keep the home hero close to the header instead of the template's large gap. */
+.it-services-banner{padding-top:140px;padding-bottom:80px}
+@media(max-width:991px){.it-services-banner{padding-top:120px;padding-bottom:60px}}
+@media(max-width:575px){.it-services-banner{padding-top:110px;padding-bottom:45px}}
+/* Search and theme remain compact controls in the primary header. */
+.site-search-toggle{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0;border:1px solid var(--site-border);border-radius:5px;background:var(--site-bg);color:var(--site-text);cursor:pointer;flex-shrink:0}
+.site-search-toggle i{font-size:22px}.site-search-toggle:hover,.site-search-toggle[aria-expanded="true"]{color:var(--site-accent);border-color:var(--site-accent)}
+.site-search-toggle:focus-visible,.header-search-close:focus-visible{outline:2px solid var(--site-accent)!important;outline-offset:3px}
+#navbar .header-search-panel{position:absolute;top:100%;left:0;right:0;z-index:10;background:var(--site-bg);color:var(--site-text);border-top:1px solid var(--site-border);border-bottom:1px solid var(--site-border);padding:20px 0;max-height:70vh;overflow-y:auto}
+.header-search-panel form{display:flex;gap:12px;align-items:center;border:1px solid var(--site-border);border-radius:5px;background:var(--site-bg);padding:8px 12px}
+.header-search-panel form:focus-within{border-color:var(--site-accent)}
+.header-search-panel form > i{color:var(--site-accent);font-size:24px}
+#navbar .header-search-panel input{flex:1;min-width:0;width:100%;height:42px;padding:8px;border:0!important;outline:none!important;background:transparent!important;color:var(--site-text);font:600 17px "Nunito",sans-serif}
+.header-search-close{display:grid;place-items:center;flex-shrink:0;width:40px;height:40px;background:transparent;border:0;color:var(--site-muted);font-size:25px;cursor:pointer}
+.header-search-results > p{margin:16px 0 10px;color:var(--site-muted);font-size:14px}
+.header-search-results ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;list-style:none;margin:0;padding:0}
+.header-search-results li a{display:flex;flex-direction:column;gap:4px;border-radius:5px;padding:12px;color:var(--site-text);background:var(--site-surface)}
+.header-search-results li a:hover,.header-search-results li a:focus-visible{background:var(--site-soft);color:var(--site-accent)}
+.header-search-results li a span{font-size:14px;color:var(--site-muted);line-height:1.5}
+@media(max-width:767px){.header-search-results ul{grid-template-columns:1fr}.header-search-panel .container{padding-left:15px;padding-right:15px}}
+/* Both original History layouts paint white cards with highly specific rules. */
+html[data-theme="dark"] .history-timeline .timeline-block .timeline-content,
+html[data-theme="dark"] .history-timeline.history-timeline-style-two .timeline-block .timeline-content{background-color:var(--site-surface);color:var(--site-text);border:1px solid var(--site-border)}
+html[data-theme="dark"] .history-timeline .timeline-block .timeline-content .content h3{color:var(--site-text)}
+html[data-theme="dark"] .history-timeline .timeline-block .timeline-content .content p{color:var(--site-muted)}
+html[data-theme="dark"] .history-timeline .timeline-block .timeline-date{color:var(--site-muted)}
+html[data-theme="dark"] .history-timeline .timeline-block .timeline-date :is(span,sup){color:var(--site-text)}
+html[data-theme="dark"] .history-timeline::before{background:var(--site-border)}
+html[data-theme="dark"] .history-timeline .timeline-block::before{color:var(--site-accent)}

@@ -40,7 +40,9 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "import:new-web": "node scripts/import-new-web.cjs",
+    "prebuild": "npm run import:new-web"
   },
   "repository": {
     "type": "git",

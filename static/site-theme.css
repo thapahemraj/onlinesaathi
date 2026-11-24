@@ -78,6 +78,11 @@ html[data-theme="dark"] .services-details-info .services-contact-info :is(ul li,
 html[data-theme="dark"] .services-details-info .services-list li a:hover,html[data-theme="dark"] .services-details-info .services-list li a.active{background:var(--site-primary);border-color:var(--site-primary);color:#fff}
 html[data-theme="dark"] .services-details-desc :is(.content ul li,.technologies-features li span){color:var(--site-muted)}
 
+/* Keep the full Online Saathi mark crisp and balanced inside imported footers. */
+.imported-content footer .flogo{display:inline-flex;align-items:center;justify-content:center;line-height:0;padding:8px 12px;border:1px solid rgba(255,255,255,.16);box-shadow:none}
+.imported-content footer .flogo img{display:block;width:auto;height:38px;max-width:min(100%,210px);object-fit:contain}
+@media(max-width:560px){.imported-content footer .flogo img{height:34px;max-width:190px}}
+
 /* Compact icon control; retain an accessible label and keyboard focus ring. */
 .site-theme-toggle{width:42px;height:42px;min-height:42px;padding:0;gap:0;flex-shrink:0}
 html[data-theme="dark"] #navbar.navbar-area,

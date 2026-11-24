@@ -13,7 +13,9 @@ const global = read('global');
 const uploadedSource = path.join(root, 'content/web-content');
 
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-const routes = {index:'/', about:'/about/', history:'/history/', workers:'/workers/', saathi:'/saathi/', business:'/business/', team:'/team/', contact:'/contact/', terms:'/terms/', privacy:'/privacy/', refund:'/refund/'};
+// Legal URLs already exist in production and must remain the public canonical paths.
+// The short URLs are still generated below as compatibility aliases.
+const routes = {index:'/', about:'/about/', history:'/history/', workers:'/workers/', saathi:'/saathi/', business:'/business/', team:'/team/', contact:'/contact/', terms:'/terms-condition/', privacy:'/privacy-policy/', refund:'/refund-policy/'};
 const aliases = {about:['about-us'], terms:['terms-condition'], privacy:['privacy-policy'], refund:['refund-policy']};
 for (const [page, route] of Object.entries(routes)) {
   const uploadedFile = path.join(uploadedSource, page+'.html');
